@@ -1,0 +1,108 @@
+exec "ctf.cfg"
+
+laser_level 2
+laser_num 2
+# BEGIN GENERATED CODE
+addent 1792.000000 -2304.000000 "images/beam.png" 1.000000 0.000000 " " nobound rect
+addent 1280.000000 -2304.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent 960.000000 -2304.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -1280.000000 -2752.000000 "images/beam.png" 1.000000 -1.570796 " " nobound rect
+addent -1280.000000 -2240.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent -1280.000000 -1920.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -1856.000000 -768.000000 "images/beam.png" 1.000000 0.000000 " " nobound rect
+addent -1344.000000 -768.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent -832.000000 -768.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent -512.000000 -768.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -512.000000 -1088.000000 "images/beam.png" 1.000000 1.570796 " " rect
+addent -512.000000 -1600.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent -512.000000 -1920.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 128.000000 -1536.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 128.000000 -1856.000000 "images/beam.png" 1.000000 1.570796 " " rect
+addent 128.000000 -2368.000000 "images/beam.png" 1.000000 1.570796 " " rect
+addent 128.000000 -2880.000000 "images/beam.png" 1.000000 1.570796 " " nobound rect
+addent 448.000000 -1536.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent 960.000000 -1536.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent 1280.000000 -1536.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 512.000000 832.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 832.000000 832.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent 1344.000000 832.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent 1856.000000 832.000000 "images/beam.png" 1.000000 0.000000 " " nobound rect
+addent 0.000000 0.000000 "images/planet-fire.png" 1.250000 0.000000 " "
+addent -1280.000000 256.000000 "images/moon-enceladus.png" 0.750000 0.000000 " "
+addent 1280.000000 -256.000000 "images/moon-enceladus.png" 0.750000 0.000000 " "
+addent 512.000000 1152.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent 512.000000 1664.000000 "images/beam.png" 1.000000 1.570796 " " rect
+addent 512.000000 1984.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 1280.000000 1920.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 1280.000000 2240.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent 1280.000000 2752.000000 "images/beam.png" 1.000000 1.570796 " " nobound rect
+addent -128.000000 1600.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -448.000000 1600.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent -960.000000 1600.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent -1280.000000 1600.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -128.000000 1920.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent -128.000000 2432.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent -128.000000 2944.000000 "images/beam.png" 1.000000 -1.570796 " " nobound rect
+addent -960.000000 2368.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -1280.000000 2368.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent -1792.000000 2368.000000 "images/beam.png" 1.000000 0.000000 " " nobound rect
+addent 1530.434692 2413.043457 " " 0.500000 0.000000 "red_flag" nomass nocollide hidden
+addent 1792.000000 2752.000000 " " 0.500000 0.000000 "red_flag" nomass nocollide hidden
+addent -1728.000000 2560.000000 " " 0.500000 0.000000 "red_flag" nomass nocollide hidden
+addent -1395.652222 2826.086914 " " 0.500000 0.000000 "red_flag" nomass nocollide hidden
+addent -1792.000000 -2752.000000 " " 0.500000 0.000000 "blue_flag" nomass nocollide hidden
+addent -1534.782593 -2330.434814 " " 0.500000 0.000000 "blue_flag" nomass nocollide hidden
+addent 1728.000000 -2816.000000 " " 0.500000 0.000000 "blue_flag" nomass nocollide hidden
+addent 1472.000000 -2560.000000 " " 0.500000 0.000000 "blue_flag" nomass nocollide hidden
+addent -1404.347900 2569.565186 " " 0.500000 0.000000 "red_flag" nomass nocollide hidden
+addent -1717.391357 2821.739258 " " 0.500000 0.000000 "red_flag" nomass nocollide hidden
+addent 1778.260742 2413.043457 " " 0.500000 0.000000 "red_flag" nomass nocollide hidden
+addent 1534.782593 2739.130371 " " 0.500000 0.000000 "red_flag" nomass nocollide hidden
+addent -1556.521729 -2747.826172 " " 0.500000 0.000000 "blue_flag" nomass nocollide hidden
+addent -1786.956543 -2343.478271 " " 0.500000 0.000000 "blue_flag" nomass nocollide hidden
+addent 1478.260742 -2804.347900 " " 0.500000 0.000000 "blue_flag" nomass nocollide hidden
+addent 1717.391235 -2547.826172 " " 0.500000 0.000000 "blue_flag" nomass nocollide hidden
+addspawn -320.000000 -1536.000000 -1.570796 4
+addspawn 384.000000 -1344.000000 3.141593 4
+addspawn -64.000000 -1536.000000 -1.570796 4
+addspawn 1024.000000 -1344.000000 3.141593 4
+addspawn -1024.000000 1408.000000 0.000000 3
+addspawn -384.000000 1408.000000 0.000000 3
+addspawn 64.000000 1600.000000 0.000000 3
+addspawn 320.000000 1600.000000 0.000000 3
+addregion blue_flagdrop -1917.000000 -2913.000000 -1434.000000 -2069.000000
+addregion blue_flagdrop 1199.000000 -2913.000000 1886.000000 -2417.000000
+addregion red_flagdrop -1926.000000 2452.000000 -1130.000000 2930.000000
+addregion red_flagdrop 1426.000000 2217.000000 1899.000000 2895.000000
+border_left -2000.000000
+border_right 2000.000000
+border_top -3000.000000
+border_bottom 3000.000000
+spawn_players
+# END GENERATED CODE
+
+cl soundtrack "sounds/ambient2.mp3"
+
+autopowerup -1280.000000 -320.000000 powerup1 16 random
+autopowerup 1280.000000 384.000000 powerup2 16 random
+autopowerup -512.000000 1984.000000 powerup3 16 random
+autopowerup 512.000000 -1920.000000 powerup4 16 random
+
+red_flagpos 1530.434692 2413.043457
+red_flagpos 1792.000000 2752.000000
+red_flagpos -1728.000000 2560.000000
+red_flagpos -1395.652222 2826.086914
+blue_flagpos -1792.000000 -2752.000000
+blue_flagpos -1534.782593 -2330.434814
+blue_flagpos 1728.000000 -2816.000000
+blue_flagpos 1472.000000 -2560.000000
+red_flagpos -1404.347900 2569.565186
+red_flagpos -1717.391357 2821.739258
+red_flagpos 1778.260742 2413.043457
+red_flagpos 1534.782593 2739.130371
+blue_flagpos -1556.521729 -2747.826172
+blue_flagpos -1786.956543 -2343.478271
+blue_flagpos 1478.260742 -2804.347900
+blue_flagpos 1717.391235 -2547.826172
+
+give_flags

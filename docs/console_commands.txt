@@ -1,0 +1,75 @@
+Special variables:
+	edge_hit    When a human player hits the edge of the map, defined to that
+	            player's entid.
+
+Controls
+  Ship:
+	+left
+	+right
+	+strafe_left
+	+strafe_right
+	+thrust
+	+brake
+	+shooting
+  Misc:
+	+show_scores
+	toggle_fullscreen
+	player [action]
+	+player [action]
+	toggleconsole
+	kill                      Suicide
+	menu [index]              Pick action from a menu
+	instant_zoom              Skip over zoom animation
+	mousepos [x] [y]          Tell the server the mouse is over (x,y)
+	exit, quit                Quit the game
+	say [text]                Chat.
+	addclient
+
+Keyboard:
+	bind [key] [action]
+	unbind [key]
+	unbindall
+
+Scripting:
+	let [var] = [value]       Define var. (Value is optional.)
+	set [var] = [value]       Define var. (Value is optional.)
+	fun [name] [body]
+	sv [command]
+	svstr [command]
+	trigger [action] [condition(s)]
+	exec [filename]
+	show_menu [heading] [text] [action]
+	close_menu
+	cursor [command]
+	echo [text]
+
+Debug:
+	net_stats [message]       Print bandwidth statistics from my perspective
+	server_stats [message]    Print bandwidth statistics from server perspective
+	showvel                   Print ship velocity
+	fallback_timer            DEPRACATED: Switch to a different timing method
+	setpos [x] [y]            Move my ship to (x, y)
+
+World manipulation:
+	map [name]
+	spawn_players
+	mark_spawnpoints
+	unmark_spawnpoints
+	mark_waypoints
+	unmark_waypoints
+	addent [x][y] [image] [scale] [rotation]
+	addbot [x][y]
+	addspawn [x][y][r]
+	addwaypoint [x][y]
+	addedge [source][dest]
+	removeedge [source][dest]
+	renamewaypoint [from][to]
+	select_click
+	move_ent_to [x][y]
+	rotate_ent_towards [x][y]
+	delete_ent
+	kick_ent_towards [x][y]
+	save_level [filename]
+	select_ent [entid]
+
+

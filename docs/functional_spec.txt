@@ -1,0 +1,135 @@
+Server                                                                                Server Utility
+ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     . . . . . . . . . .
+ .                                                                         .     .                 .
+ .   AIPlayer                                                              .     .                 .
+ .   HumanPlayer                                                           .     .                 .
+ .      |                                                                  .     .                 .
+ .      v                                                                  .     .                 .
+ .   Player Shot                                                           .     .                 .
+ .      |   EnvironmentEntity                                              .     .                 .
+ .      |  /                                                               .     .                 .
+ .      v  v                                                               .     .                 .
+ .   SVEntity<-------------------------Server              ServerScripting .     .ServerConsoleVar .
+ .      |                                 |                         |      .     . /               .
+ . . . .|. . . . . . . . . . . . . . . . .|. . . . . . . . . . . . .|. . . .     ./. . . . . . . . .
+        |                                 |                         |            /
+        v                                 v                         v           /
+     Position           SendMessage-->NetworkNode              Scripting <-----<
+        ^               RecvMessage       ^  See messaging          ^ cvars     \
+Client  |                                 |  protocol               | commands   \    Client Utility
+ . . . .|. . . . . . . . . . . . . . . . .|. . . . . . . . . . . . .|. . . .     .\. . . . . . . . .
+ .      |                                 |                         |      .     . \               .
+ .   CLEntity<-------------------------Client-->Console--->ClientScripting .     .ClientConsoleVar .
+ .      |                         __---  |  -_           _>                .     .                 .
+ .      |                    __---       |    ->Keyboard/                  .     .                 .
+ .      |              UI<---            v                                 .     .                 .
+ .      |               |            SoundPool                             .     .                 .
+ .      |               v            ParticlePool                          .     .                 .
+ .      |           Healthbar                                              .     .                 .
+ .      v           ActiveRadar                                            .     .                 .
+ .   ImagePool      WeaponInfo                                             .     .                 .
+ .                  MessageDisp                                            .     .                 .
+ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     . . . . . . . . . .
+
+
+Messaging Protocol
+
+The client and server halves communicate through messages (datagrams) which
+are either wrapped in TCP or just passed around locally. Each message has a
+type, body, source and destination. The type determines the format of the body,
+and the semantics. The destination identifies an instance of Client - that is,
+both the destination host and, where split-screen is used, the specific screen.
+Message types are enumerated and documented in protocol.hpp.
+
+The client communicates to the server by sending console commands
+(message_command) to be interpretted by ServerScripting. The server sends
+different message types to add and update things that should be displayed;
+eg, for an object on the screen, message_add, message_update, message_drop.
+
+
+Scripting
+
+The scripting system is modelled after that used in the Quake series and
+Half-Life (and, since the Quake engines are the basis for other games, many
+others). It is generally familiar among modders and power user gamers.
+
+The console is used in two ways: cvars and commands. A cvar (console variable)
+is simply a global variable which has been made accessible through scripting.
+For example,
+  ServerConsoleVar<float> turnSpeed("turn_speed", 3);
+declares the variable turnSpeed (which is a float) so that it can be referred to 
+through the console as turn_speed, with default value 3. The user can type
+  turn_speed 5
+and change the value of turnSpeed to 5. If he types just
+  turn_speed
+then the output will be "turn_speed is 5 (default 3)".
+
+The implementation uses a C++ template to fill in the type of variable. The code
+for registering the variable with the scripting system is in the constructor,
+and casting operators are provided to allow using a ConsoleVar in the same way
+and at the same speed as the type  of the variable itself.
+
+Console commands take arguments, separated by spaces. For example,
+  bind up +thrust
+executes the command "bind" with arguments "up" and "+thrust". (This command
+assigns the up arrow to thrusting.) Commands are added either with
+  CLIENT_CONSOLE_COMMAND(command_name)
+  { /* Command body */ }
+for commands that execute on the client, or
+  SERVER_CONSOLE_COMMAND(command_name)
+  { /* Command body */ }
+for commands that execute on the client. The macro handles registration of the
+command with the scripting system, and provides arguments argc (argument count),
+argv (argument vector), and who (ID of the player that ran the command).
+
+
+
+Class Overview
+
+Server: Represents the machine that hosts connected clients. Processes all
+games logic.
+
+SVEntity: Abstract base for server-side game objects. Stores data necessary for
+processing the object's state.
+  mass, radius, position
+
+Player :public SVEntity
+Abstract base class for ships. Contains controls for steering the ship: thrust,
+shoot, turnleft, etc.
+
+HumanPlayer :public Player
+Represents a human controlled ship. Has a clientID bound to the controlling
+player's machine.
+
+AIPlayer :public Player
+An AI controlled ship (bot) has methods to determine behavior towards
+environment. chase, evade, findBestTarget, etc.
+
+EnvironmentEntity :SVENtity
+An environmental obstacle, eg asteroids and planets. Has a gravitational force
+that attracts ships.
+
+Client: Represents a machine connected to a server. Processes interface and
+audio/visual effects.
+
+ImagePool: Container for images that need to be draewn.
+
+SoundPool: Container for sound effects that need to be played.
+
+CLEntity: Represents the client's view of a game object. Handles drawing and
+motion prediciton.
+
+UI: User interface elements such as health bar, radar, etc.
+
+Console: Scroll-down screen with prompt and history for entering commands to
+be run by ClientScripting.
+
+ParticlePool: Controls particle generation and display for special effects
+(such as explosions). Contains various explosoin methods corresponding to the
+explosion type.
+
+Particle: An individual particle contained in a particle pool.
+
+Keyboard: Accepts keypresses and translates them through bindings for execution
+through ClientScripting.
+

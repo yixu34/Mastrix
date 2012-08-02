@@ -1,0 +1,8 @@
+# BEGIN GENERATED CODE
+addspawn 0.000000 0.000000 0.000000
+border_left -2000
+border_right 2000
+border_top -3000.000000
+border_bottom 3000.000000
+spawn_players
+# END GENERATED CODE

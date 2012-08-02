@@ -1,0 +1,68 @@
+# BEGIN GENERATED CODE
+addent -667.500000 -440.000000 "images/star1.png" 0.300000 0.000000 " " nocollide
+addent -745.000000 -580.000000 "images/planet-ice.png" 0.150000 0.000000 " " nocollide
+addent -530.000000 -352.500000 "images/planet-fire.png" 0.150000 0.000000 " " nocollide
+addent 707.500000 -54.999985 "images/planet-water.png" 0.250000 0.000000 " " nocollide
+addent 800.000000 -179.999985 "images/moon-enceladus.png" 0.120000 0.000000 " " nocollide
+addent -124.999969 570.000000 "images/star1.png" 0.200000 0.000000 " " nocollide
+addent -337.499969 675.000000 "images/star1.png" 0.200000 0.000000 " " nocollide
+addspawn -27.499969 -2.499985 1.642104
+addregion sub1 -793.000000 -629.000000 -483.000000 -309.000000
+addregion sub2 626.000000 -219.000000 856.000000 30.000000
+addregion sub3 -403.000000 500.000000 -66.000000 743.000000
+border_left -1200.000000
+border_right 1200.000000
+border_top -1000.000000
+border_bottom 1000.000000
+spawn_players
+# END GENERATED CODE
+
+ifndef did_sub1 trigger "fade_map massacre_sub1" sub1
+ifndef did_sub2 trigger "fade_map massacre_sub2" sub2
+ifndef did_sub3 trigger "fade_map massacre_sub3" sub3
+
+fun setup_massacre_all {
+	trigger "map first_encounter"
+		killed_sub1_bot1
+		killed_sub1_bot2
+		killed_sub1_bot3
+		killed_sub1_bot4
+		killed_sub1_bot5
+		killed_sub1_bot6
+		killed_sub2_bot1
+		killed_sub2_bot2
+		killed_sub2_bot3
+		killed_sub2_bot4
+		killed_sub2_bot5
+		killed_sub2_bot6
+		killed_sub2_bot7
+		killed_sub3_bot1
+		killed_sub3_bot2
+		killed_sub3_bot3
+		killed_sub3_bot4
+		killed_sub3_bot5
+		killed_sub3_bot6;
+}
+
+setup_massacre_all
+
+ifndef did_massacre_briefing cl briefing "MESSAGE FROM UTO COMMAND --
+
+We\'ve arrived at a resource-rich star cluster! Unfortunately, it seems to be inhabited. I'm sure you can correct that situation.
+
+-- END MESSAGE
+
+OBJECTIVES:
+
+- Visit each of the three star systems
+- Destroy anything that moves"
+
+ifndef started_massacre_music cl soundtrack "sounds/Ether.mp3"
+
+set did_massacre_briefing 1
+sticky did_massacre_briefing
+
+trigger "fade_map massacre" player_died
+set started_massacre_music 1
+sticky started_massacre_music
+

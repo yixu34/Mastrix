@@ -1,0 +1,33 @@
+exec "deathmatch.cfg"
+
+# BEGIN GENERATED CODE
+addent -449.666718 -253.333282 images/planet-water.png 0.300000 0.000000
+addent 0.000000 0.000000 images/planet-ice.png 0.300000 0.000000
+addent 466.999908 -274.999939 images/planet-water.png 0.300000 0.000000
+addent -723.000061 175.000031 images/planet-ice.png 0.300000 0.000000
+addent 548.666565 400.000031 images/planet-water.png 0.300000 0.000000
+addent 35.333271 448.333344 images/planet-water.png 0.300000 0.000000
+addent 28.693272 -483.420685 images/planet-ice.png 0.300000 0.000000
+addspawn 785.354614 391.596710 2.842346
+addspawn 320.119934 424.930054 1.861061
+addspawn -796.312012 31.596745 0.340979
+addspawn 707.021301 -503.403229 -2.308612
+addspawn 245.359940 -560.087341 -1.623797
+addspawn -569.666687 488.333344 0.707432
+addspawn 761.999939 -18.333292 -3.015680
+addspawn -668.000061 -511.666626 -0.365716
+border_left -853.000000
+border_right 853.000000
+border_top -640.000000
+border_bottom 640.000000
+spawn_players
+# END GENERATED CODE
+
+cl soundtrack "sounds/ambient2.mp3"
+
+no_player_gravity 1
+grav 600
+
+start_missiles 30
+
+autopowerup -340 208 p1 20 random

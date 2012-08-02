@@ -1,0 +1,160 @@
+laser_num 2
+start_missiles 15
+
+# BEGIN GENERATED CODE
+addent -896.000000 -960.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -576.000000 -960.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent -896.000000 -640.000000 "images/beam.png" 1.000000 1.570796 " " rect
+addent -64.000000 -960.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent 448.000000 -960.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent 768.000000 -960.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 768.000000 -640.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent 768.000000 -128.000000 "images/beam.png" 1.000000 1.570796 " " rect
+addent 768.000000 384.000000 "images/beam.png" 1.000000 1.570796 " " rect
+addent 448.000000 704.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent 768.000000 704.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -64.000000 704.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent -576.000000 704.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent -896.000000 704.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -896.000000 384.000000 "images/beam.png" 1.000000 1.570796 " " rect
+addent -896.000000 -128.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addspawn 0.000000 0.000000 0.000000
+addwaypoint 478.000000 446.000000
+addwaypoint -66.684006 506.573364
+addwaypoint -590.000000 414.000000
+addwaypoint -689.617310 -128.093292
+addwaypoint -606.950684 -680.093262
+addwaypoint -52.284004 -789.426575
+addwaypoint 498.000000 -702.000000
+addwaypoint 565.582642 -154.759949
+addwaypoint -318.950653 -389.426605
+addwaypoint 227.715988 -405.426605
+addwaypoint 214.382660 143.906708
+addwaypoint -294.950653 146.573380
+addwaypoint -41.617336 -133.426620
+addedge 565.582642 -154.759949 478.000000 446.000000
+addedge -66.684006 506.573364 478.000000 446.000000
+addedge 214.382660 143.906708 478.000000 446.000000
+addedge -590.000000 414.000000 -66.684006 506.573364
+addedge 214.382660 143.906708 -66.684006 506.573364
+addedge -294.950653 146.573380 -66.684006 506.573364
+addedge -689.617310 -128.093292 -590.000000 414.000000
+addedge -294.950653 146.573380 -590.000000 414.000000
+addedge -606.950684 -680.093262 -689.617310 -128.093292
+addedge -294.950653 146.573380 -689.617310 -128.093292
+addedge -318.950653 -389.426605 -689.617310 -128.093292
+addedge -52.284004 -789.426575 -606.950684 -680.093262
+addedge -318.950653 -389.426605 -606.950684 -680.093262
+addedge 498.000000 -702.000000 -52.284004 -789.426575
+addedge 227.715988 -405.426605 -52.284004 -789.426575
+addedge -318.950653 -389.426605 -52.284004 -789.426575
+addedge 565.582642 -154.759949 498.000000 -702.000000
+addedge 227.715988 -405.426605 498.000000 -702.000000
+addedge 227.715988 -405.426605 565.582642 -154.759949
+addedge 214.382660 143.906708 565.582642 -154.759949
+addedge -294.950653 146.573380 -318.950653 -389.426605
+addedge 227.715988 -405.426605 -318.950653 -389.426605
+addedge -41.617336 -133.426620 -318.950653 -389.426605
+addedge 214.382660 143.906708 227.715988 -405.426605
+addedge -41.617336 -133.426620 227.715988 -405.426605
+addedge -294.950653 146.573380 214.382660 143.906708
+addedge -41.617336 -133.426620 214.382660 143.906708
+addedge -41.617336 -133.426620 -294.950653 146.573380
+border_left -1500.000000
+border_right 1500.000000
+border_top -1500.000000
+border_bottom 1500.000000
+spawn_players
+# END GENERATED CODE
+
+cl soundtrack "sounds/ether.mp3"
+
+let nnw = -287 -776
+let nne = 125 -777
+let ne = 497 -700
+let nee = 553 -326
+let see = 545 63
+let se = 478 447
+let sse = 119 486
+let ssw = -246 482
+let sw = -591 413
+let sww = -709 65
+let nww = -709 -335
+let nw = -618 -700
+
+fun bots1 {
+	say "Hippie: Your imperialism ends now!";
+	bot_repeating bot1 $ne hip;
+	bot_repeating bot2 $se hip;
+	bot_repeating bot3 $nw hip;
+	bot_repeating bot4 $sw hip;
+	setup_trigger_wave1;
+	}
+	
+fun setup_trigger_wave1 {
+	trigger bots2
+		killed_bot1
+		killed_bot2
+		killed_bot3
+		killed_bot4;
+		}
+		
+fun bots2 {
+	say "Hippie: We will not let you exploit the people of Mastrix!";
+	bot_repeating bot5 $nnw hip;
+	bot_repeating bot6 $nne hip;
+	bot_repeating bot7 $sse hip;
+	bot_repeating bot8 $ssw hip;
+	bot_repeating bot9 $ne hip;
+	bot_repeating bota $sw hip;
+	setup_trigger_wave2;
+	}
+
+fun setup_trigger_wave2 {
+	trigger bots3
+		killed_bot5
+		killed_bot6
+		killed_bot7
+		killed_bot8
+		killed_bot9
+		killed_bota;
+		}
+		
+fun bots3 {
+	say "Super-Hippie: This ends now!";
+	bot_repeating botf $nw hip2;
+	setup_trigger_cleared;
+	}
+	
+fun setup_trigger_cleared {
+	trigger "fade_map corridor" killed_botf;
+	}
+	
+trigger "fade_map station" player_died
+
+bots1
+
+
+cl briefing "Message attempt: Receive --"
+
+cl briefing "FAILED"
+
+cl briefing "Retry --"
+
+cl briefing "FAILED"
+
+cl briefing "Message received from unknown source. Accept?"
+
+cl briefing "Yes --"
+
+cl briefing "BEGIN TRANSMISSION --
+
+ATTENTION
+
+We are Green[antennae]peace. We hijacked a\
+UTO vessel and followed you here. You have fallen into\
+our trap. We have come to stop the senseless exploitation\
+of the peaceful residents of Mastrix. We will not allow this corporate\
+abuse to continue. Prepare to be destroyed!
+
+-- END TRANSMISSION"

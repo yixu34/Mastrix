@@ -1,0 +1,21 @@
+                              C #/L Missiles  Brief Death Conn Music Weaps
+X Departure                   X 1/1 0          X     X     X   none   X     
+X Harvest                       1/1 0         N/A    X     X   a1     X     
+X Massacre                      1/1 0          X     X     X   eth    X     
+X First Encounter             X 2/1 0                X     X   bat    X     
+-----------------------------------------------------------------------------
+X Navigator                   X 2/1 0          X     X     X   a2     X     
+X Tanker clearout             X 2/1 0          X     X     X   sr     X     
+X Tanker support                2/1 0          ~     ?     X   eth    X     
+-----------------------------------------------------------------------------
+X Space station               X 2/1 15         X     X     X   a2/bat X      
+X Militant environmentalists    2/1 15         X     X     X   sr     X      
+-----------------------------------------------------------------------------
+X Corridor                    X 2/1 15         X     X     X   a2     X      
+X Shield generators           X 2/2 15         X     X     X   eth    X      
+X Motherlode/Boss fight         2/2 15         X     X     X   sr     X      
+-----------------------------------------------------------------------------
+  Return to earth             X 2/2 15         X               a1            
+X Defend earth                X 2/2 15         X     X     X   bat    X      
+X Showdown                    X 3/2 30         X     X     X   int    X      
+

@@ -1,0 +1,34 @@
+# BEGIN GENERATED CODE
+addent 30.000002 -73.333313 "images/planet-jupiter.png" 1.500000 0.000000 ""
+addspawn -700.000000 -700.000000 0.000000
+border_left -1500.000000
+border_right 1500.000000
+border_top -1500.000000
+border_bottom 1500.000000
+spawn_players
+# END GENERATED CODE
+
+cl show_radar 1
+
+bot_once gas_turret1 -700 00 turret
+bot_once gas_turret2  900 00 turret
+bot_once gas_turret3  0    800 missileturret
+bot_once gas_turret4  0   -800 missileturret
+
+fun setup_triggers {
+	trigger "fade_map tanker2" 
+				edge_hit 
+				killed_gas_turret1
+				killed_gas_turret2
+				killed_gas_turret3
+				killed_gas_turret4
+}
+
+fun death {
+	set restart_tanker 1;
+	sticky restart_tanker;
+	fade_map tanker2;
+}
+trigger death player_died
+setup_triggers
+

@@ -1,0 +1,112 @@
+# BEGIN GENERATED CODE
+addspawn -689.666565 429.000031 0.000000
+addwaypoint -16.333271 -402.666595
+addwaypoint 540.333374 339.000031
+addwaypoint 442.000031 -180.999954
+addwaypoint 130.333389 24.000040
+addwaypoint -181.333267 14.000040
+addwaypoint -454.666595 -192.666611
+addwaypoint -712.999939 -414.333282
+addwaypoint -367.999939 -517.666626
+addwaypoint -29.666605 364.000031
+addwaypoint 293.666718 529.000000
+addwaypoint -511.333252 285.666687
+addwaypoint -286.333252 522.333374
+addwaypoint -689.666565 9.000040
+addwaypoint 750.333374 -44.333290
+addedge -367.999939 -517.666626 -16.333271 -402.666595
+addedge -454.666595 -192.666611 -16.333271 -402.666595
+addedge -181.333267 14.000040 -16.333271 -402.666595
+addedge 130.333389 24.000040 -16.333271 -402.666595
+addedge 442.000031 -180.999954 -16.333271 -402.666595
+addedge -29.666605 364.000031 540.333374 339.000031
+addedge 130.333389 24.000040 540.333374 339.000031
+addedge 293.666718 529.000000 540.333374 339.000031
+addedge 442.000031 -180.999954 540.333374 339.000031
+addedge 750.333374 -44.333290 540.333374 339.000031
+addedge 130.333389 24.000040 442.000031 -180.999954
+addedge 750.333374 -44.333290 442.000031 -180.999954
+addedge -454.666595 -192.666611 442.000031 -180.999954
+addedge -181.333267 14.000040 130.333389 24.000040
+addedge -29.666605 364.000031 130.333389 24.000040
+addedge 293.666718 529.000000 130.333389 24.000040
+addedge 750.333374 -44.333290 130.333389 24.000040
+addedge -689.666565 9.000040 -181.333267 14.000040
+addedge -454.666595 -192.666611 -181.333267 14.000040
+addedge -511.333252 285.666687 -181.333267 14.000040
+addedge -29.666605 364.000031 -181.333267 14.000040
+addedge -286.333252 522.333374 -181.333267 14.000040
+addedge -367.999939 -517.666626 -454.666595 -192.666611
+addedge -712.999939 -414.333282 -454.666595 -192.666611
+addedge -689.666565 9.000040 -454.666595 -192.666611
+addedge -511.333252 285.666687 -454.666595 -192.666611
+addedge -367.999939 -517.666626 -712.999939 -414.333282
+addedge -689.666565 9.000040 -712.999939 -414.333282
+addedge -511.333252 285.666687 -29.666605 364.000031
+addedge -286.333252 522.333374 -29.666605 364.000031
+addedge 293.666718 529.000000 -29.666605 364.000031
+addedge -286.333252 522.333374 293.666718 529.000000
+addedge -689.666565 9.000040 -511.333252 285.666687
+addedge -286.333252 522.333374 -511.333252 285.666687
+border_left -852.000000
+border_right 852.000000
+border_top -640.000000
+border_bottom 639.000000
+spawn_players
+# END GENERATED CODE
+
+bot_once shieldgenerator1 663.666687 -470.999939 generator
+bot_once spawnship1 192.000046 -497.666595 spawnship
+bot_once spawnship2 737.000061 445.666687 spawnship
+
+fun stopspawn1 {
+	let spawn1_destroyed = 1;
+}
+
+fun stopspawn2 {
+	let spawn2_destroyed = 1;
+}
+
+timer spawn_new_timer1 3
+timer spawn_new_timer2 6
+
+fun spawn_new1 {
+	unset spawn_new_timer1;
+	addbot 192.0 -350.0 slowbot;
+	timer spawn_new_timer1 15;
+	trigger checkspawn1 spawn_new_timer1;
+}
+
+fun spawn_new2 {
+	unset spawn_new_timer2;
+	addbot 600.0 445.0 slowbot;
+	timer spawn_new_timer2 15;
+	trigger checkspawn2 spawn_new_timer2;
+}
+
+fun checkspawn1 {
+	ifndef spawn1_destroyed spawn_new1;
+}
+
+fun checkspawn2 {
+	ifndef spawn2_destroyed spawn_new2;
+}
+
+trigger stopspawn1 killed_spawnship1
+trigger stopspawn2 killed_spawnship2
+
+trigger checkspawn1 spawn_new_timer1
+trigger checkspawn2 spawn_new_timer2
+
+fun generator1_destroyed {
+	let did_shield1 = 1;
+	sticky did_shield1;
+	fade_map shieldgen;
+	say "Command: Shield generator 1 destroyed!";
+}
+
+trigger generator1_destroyed killed_shieldgenerator1
+
+cl show_radar 0
+
+trigger "fade_map shieldgen" player_died

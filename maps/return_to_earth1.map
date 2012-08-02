@@ -1,0 +1,167 @@
+# BEGIN GENERATED CODE
+addspawn 2368.000000 2432.000000 2.356194
+border_left -3000.000000
+border_right 3000.000000
+border_top -3000.000000
+border_bottom 3000.000000
+spawn_players
+# END GENERATED CODE
+addent 2432.000000 2048.000000 "images/beam.png" 1.000000 0.200000 " " rect
+set_rvel 0.2 $_
+addent 2752.000000 2752.000000 "images/beam.png" 1.000000 0.400000 " " nobound rect
+set_rvel -0.2 $_
+addent 1792.000000 2624.000000 "images/beam.png" 1.000000 0.600000 " " nobound rect
+set_rvel 0.4 $_
+addent 1536.000000 2176.000000 "images/beam.png" 1.000000 0.800000 " " rect
+set_rvel -0.4 $_
+addent 1920.000000 1664.000000 "images/beam.png" 1.000000 1.000000 " " rect
+set_rvel 0.3 $_
+addent 2752.000000 1280.000000 "images/beam.png" 1.000000 1.200000 " " nobound rect
+set_rvel -0.3 $_
+addent -2880.000000 -960.000000 "images/beam.png" 1.000000 1.400000 " " nobound rect
+set_rvel 0.15 $_
+addent -2752.000000 -1984.000000 "images/beam.png" 1.000000 0.000000 " " nobound rect
+set_rvel -0.35 $_
+addent 960.000000 1728.000000 "images/beam.png" 1.000000 -0.200000 " " rect
+set_rvel 0.25 $_
+addent 768.000000 2484.015625 "images/beam.png" 1.000000 -0.400000 " " rect
+set_rvel -0.15 $_
+addent -64.000000 2816.000000 "images/beam.png" 1.000000 -0.600000 " " nobound rect
+set_rvel 0.35 $_
+addent 128.000000 2048.000000 "images/beam.png" 1.000000 -0.800000 " " rect
+set_rvel -0.25 $_
+addent 1280.000000 1280.000000 "images/beam.png" 1.000000 -1.000000 " " rect
+set_rvel 0.1 $_
+addent -128.000000 1408.000000 "images/beam.png" 1.000000 -1.200000 " " rect
+set_rvel -0.1 $_
+addent 512.000000 1024.000000 "images/beam.png" 1.000000 -1.400000 " " rect
+set_rvel 0.3 $_
+addent -640.000000 2432.000000 "images/beam.png" 1.000000 0.100000 " " rect
+set_rvel -0.3 $_
+addent -960.000000 1984.000000 "images/beam.png" 1.000000 0.300000 " " rect
+set_rvel 0.5 $_
+addent -1664.000000 2304.000000 "images/beam.png" 1.000000 0.500000 " " rect
+set_rvel -0.5 $_
+addent -1344.000000 2752.000000 "images/beam.png" 1.000000 0.700000 " " nobound rect
+set_rvel 0.2 $_
+addent -2496.000000 2624.000000 "images/beam.png" 1.000000 0.900000 " " nobound rect
+set_rvel 0.4 $_
+addent -2816.000000 2240.000000 "images/beam.png" 1.000000 1.100000 " " nobound rect
+set_rvel 0.3 $_
+addent -1024.000000 1152.000000 "images/beam.png" 1.000000 1.300000 " " rect
+set_rvel -0.4 $_
+addent 1984.000000 832.000000 "images/beam.png" 1.000000 1.500000 " " rect
+set_rvel -0.2 $_
+addent 2368.000000 384.000000 "images/beam.png" 1.000000 0.000000 " " rect
+set_rvel -0.3 $_
+addent 2816.000000 -256.000000 "images/beam.png" 1.000000 -0.100000 " " nobound rect
+set_rvel 0.15 $_
+addent 1856.000000 -64.000000 "images/beam.png" 1.000000 -0.300000 " " rect
+set_rvel -0.15 $_
+addent 2176.000000 -768.000000 "images/beam.png" 1.000000 -0.500000 " " rect
+set_rvel -0.25 $_
+addent 2624.000000 -1152.000000 "images/beam.png" 1.000000 -0.700000 " " nobound rect
+set_rvel 0.25 $_
+addent 1664.000000 -1344.000000 "images/beam.png" 1.000000 -0.900000 " " rect
+set_rvel 0.35 $_
+addent 2240.000000 -1728.000000 "images/beam.png" 1.000000 -1.100000 " " rect
+set_rvel -0.35 $_
+addent 1664.000000 -2304.000000 "images/beam.png" 1.000000 -1.300000 " " rect
+set_rvel -0.45 $_
+addent 2752.000000 -2240.000000 "images/beam.png" 1.000000 -1.500000 " " nobound rect
+set_rvel 0.45 $_
+addent 2368.000000 -2752.000000 "images/beam.png" 1.000000 0.000000 " " nobound rect
+set_rvel 0.2 $_
+addent 1216.000000 512.000000 "images/beam.png" 1.000000 0.250000 " " rect
+set_rvel -0.2 $_
+addent -2484.015625 320.000000 "images/beam.png" 1.000000 0.500000 " " rect
+set_rvel 0.3 $_
+addent -2112.000000 -128.000000 "images/beam.png" 1.000000 0.750000 " " rect
+set_rvel -0.3 $_
+addent -1664.000000 -640.000000 "images/beam.png" 1.000000 1.000000 " " rect
+set_rvel 0.4 $_
+addent -2560.000000 -512.000000 "images/beam.png" 1.000000 1.250000 " " nobound rect
+set_rvel -0.4 $_
+addent -1856.000000 -1088.000000 "images/beam.png" 1.000000 1.500000 " " rect
+set_rvel 0.5 $_
+addent -1408.000000 -1664.000000 "images/beam.png" 1.000000 0.000000 " " rect
+set_rvel -0.5 $_
+addent -1984.000000 -2048.000000 "images/beam.png" 1.000000 -0.250000 " " rect
+set_rvel -0.1 $_
+addent -1600.000000 -2432.000000 "images/beam.png" 1.000000 -0.500000 " " rect
+set_rvel 0.15 $_
+addent -2432.000000 -2624.000000 "images/beam.png" 1.000000 -0.750000 " " nobound rect
+set_rvel -0.2 $_
+addent -896.000000 -2752.000000 "images/beam.png" 1.000000 -1.000000 " " nobound rect
+set_rvel 0.25 $_
+addent -576.000000 -2368.000000 "images/beam.png" 1.000000 -1.250000 " " rect
+set_rvel -0.3 $_
+addent 192.000000 -2624.000000 "images/beam.png" 1.000000 -1.500000 " " nobound rect
+set_rvel 0.35 $_
+addent 768.000000 -2176.000000 "images/beam.png" 1.000000 0.000000 " " rect
+set_rvel 0.4 $_
+addent 1216.000000 -2816.000000 "images/beam.png" 1.000000 0.300000 " " nobound rect
+set_rvel -0.45 $_
+addent -1152.000000 256.000000 "images/beam.png" 1.000000 0.600000 " " rect
+set_rvel 0.5 $_
+addent -384.000000 640.000000 "images/beam.png" 1.000000 0.900000 " " rect
+set_rvel 0.1 $_
+addent -512.000000 -128.000000 "images/beam.png" 1.000000 1.200000 " " rect
+set_rvel 0.25 $_
+addent -832.000000 -960.000000 "images/beam.png" 1.000000 -0.800000 " " rect
+set_rvel -0.25 $_
+
+mine -2560.000000 1600.000000
+mine -2368.000000 1152.000000
+mine -2560.000000 768.000000
+mine -2048.000000 704.000000
+mine -1664.000000 1024.000000
+mine -1984.000000 1344.000000
+mine -1664.000000 1664.000000
+mine -2112.000000 1920.000000
+mine 256.000000 192.000000
+mine 704.000000 -64.000000
+mine 1152.000000 -384.000000
+mine 704.000000 -640.000000
+mine 256.000000 -960.000000
+mine 640.000000 -1344.000000
+mine 192.000000 -1728.000000
+mine -384.000000 -1728.000000
+mine -128.000000 -1344.000000
+mine -128.000000 -768.000000
+mine 128.000000 -384.000000
+mine 960.000000 -1664.000000
+mine 1088.000000 -1024.000000
+mine -64.000000 -2112.000000
+mine 512.000000 512.000000
+mine -1664.000000 512.000000
+mine -2816.000000 1152.000000
+
+powerup 2240.000000 -2304.000000 homing
+powerup 640.000000 -1024.000000 heal
+powerup 512.000000 1472.000000 missiles
+powerup -2240.000000 1536.000000 fireballs
+powerup -1152.000000 -2112.000000 laser
+
+wormhole -2432.000000 -1536.000000 to_part2
+trigger "fade_map return_to_earth2" to_part2
+
+trigger "fade_map return_to_earth1" player_died
+
+cl briefing "MESSAGE FROM UTO COMMAND --
+
+Col. BBQ\'s fleet has destroyed the Mastrix Supply Station and secured the area.
+
+However, while we were raiding the station, the Mastrix Defense Force launched\
+an attack.  A large portion of their fleet is headed to Earth!  You must\
+quickly return and support our defenses.  They\'ve made\
+it personal... show them Earth is not easily defeated!
+
+-- END MESSAGE
+
+OBJECTIVES:
+
+- Find the wormhole leading back to our solar system
+- Return to earth and prepare to defend our home!"
+
+cl soundtrack "sounds/ambient1.mp3"

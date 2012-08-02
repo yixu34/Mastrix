@@ -1,0 +1,64 @@
+# BEGIN GENERATED CODE
+border_left  -1500
+border_right  1500
+border_top   -1500
+border_bottom 1500
+# END GENERATED CODE
+
+ast_speed 110
+astfield all 150
+clear_region -250 -250 250 250
+
+addspawn 0 0 0
+spawn_players
+
+ast_drop 0.2
+ast_drop_cmd placesilver
+
+fun placesilver {
+	ifndef first_drop say "Command: There\'s silver inside the asteroids! Go get it!";
+	set first_drop=1;
+	powerup $1 $2 silver;
+}
+
+fun got_resource {
+	say "Command: That\'s it, keep it up.";
+	trigger check_threshold got_silver;
+	trigger check_threshold got_gold;
+}
+trigger got_resource got_silver
+
+fun check_threshold {
+	ifgt $money 9 finished;
+	unset got_silver; unset got_gold;
+	trigger check_threshold got_silver;
+	trigger check_threshold got_gold;
+}
+fun finished {
+	ifndef started_c1 c1;
+	let started_c1 1;
+}
+fun c1 {
+	say "Unknown vessel: We come in peace.";
+	trigger c2 t2; timer t2 2;
+}
+fun c2 {
+	say "Command: Carry on, pilot, we\'ll handle this.";
+	trigger c3 t3; timer t3 5;
+}
+fun c3 {
+	say "Unknown vessel: Mercy! Oh, the humanity! AAAAHH!";
+	trigger c4 t4; timer t4 4;
+}
+fun c4 {
+	say "Command: The alien vessel had a starmap on board, which we believe will lead us to the oil we need.";
+	say "Command: Return to base.";
+	trigger c5 t5; timer t5 3
+}
+fun c5 {
+	fade_map massacre;
+}
+
+trigger "fade_map departure" player_died
+cl soundtrack "sounds/ambient1.mp3"
+

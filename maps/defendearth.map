@@ -1,0 +1,282 @@
+laser_num 2
+laser_level 2
+start_missiles 15
+
+# BEGIN GENERATED CODE
+addent -7.370850 -21.449898 "images/planet-earth.png" 1.000000 0.000000 ""
+addspawn 0.000000 600.000000 0.000000
+addwaypoint 123.333374 1026.666748
+addwaypoint -949.999878 1016.666748
+addwaypoint -623.333252 440.000031
+addwaypoint 1030.000000 1016.666748
+addwaypoint 883.333313 433.333374
+addwaypoint -949.999878 -303.333282
+addwaypoint -479.999939 -933.333191
+addwaypoint 540.000000 -949.999878
+addwaypoint 876.666687 -343.333282
+addwaypoint -516.666626 -356.666595
+addwaypoint 463.333374 -416.666595
+addwaypoint -1900.000000 1896.666748
+addwaypoint -850.000061 1873.333374
+addwaypoint 1966.666626 1716.666748
+addwaypoint 1806.666626 751.333435
+addwaypoint 1846.666626 -55.066559
+addwaypoint 2153.333252 -1686.666748
+addwaypoint 1096.666748 -1840.000000
+addwaypoint 236.666748 -2000.000000
+addwaypoint -508.666534 -1970.000000
+addwaypoint -1620.000000 -1847.733398
+addwaypoint -1836.666626 -890.000122
+addwaypoint -1850.000000 145.999832
+addwaypoint -2193.333252 978.266479
+addwaypoint 1740.000000 -850.000122
+addwaypoint 790.000061 1813.333374
+addwaypoint -1236.666748 530.800232
+addwaypoint -566.666748 1304.133545
+addwaypoint 565.066589 1266.800293
+addwaypoint 1083.333374 362.800262
+addwaypoint 1040.000000 -546.933044
+addwaypoint 886.666748 -1253.599731
+addwaypoint -138.133301 -1221.599731
+addwaypoint -1239.466553 -1110.266235
+addwaypoint -591.199951 776.000000
+addwaypoint -1028.533325 29.333374
+addwaypoint -713.866638 -674.666626
+addwaypoint 211.466660 -741.733276
+addwaypoint 956.666748 -11.999954
+addwaypoint 896.666748 868.666687
+addedge 1030.000000 1016.666748 123.333374 1026.666748
+addedge 883.333313 433.333374 123.333374 1026.666748
+addedge -949.999878 1016.666748 123.333374 1026.666748
+addedge -623.333252 440.000031 123.333374 1026.666748
+addedge -623.333252 440.000031 -949.999878 1016.666748
+addedge -949.999878 -303.333282 -623.333252 440.000031
+addedge -516.666626 -356.666595 -623.333252 440.000031
+addedge 883.333313 433.333374 1030.000000 1016.666748
+addedge 876.666687 -343.333282 883.333313 433.333374
+addedge 463.333374 -416.666595 883.333313 433.333374
+addedge -479.999939 -933.333191 -949.999878 -303.333282
+addedge -516.666626 -356.666595 -949.999878 -303.333282
+addedge 540.000000 -949.999878 -479.999939 -933.333191
+addedge -516.666626 -356.666595 -479.999939 -933.333191
+addedge 876.666687 -343.333282 540.000000 -949.999878
+addedge 463.333374 -416.666595 540.000000 -949.999878
+addedge 463.333374 -416.666595 876.666687 -343.333282
+addedge -2193.333252 978.266479 -1900.000000 1896.666748
+addedge -850.000061 1873.333374 -1900.000000 1896.666748
+addedge -1236.666748 530.800232 -1900.000000 1896.666748
+addedge 790.000061 1813.333374 -850.000061 1873.333374
+addedge -566.666748 1304.133545 -850.000061 1873.333374
+addedge 1806.666626 751.333435 1966.666626 1716.666748
+addedge 790.000061 1813.333374 1966.666626 1716.666748
+addedge 565.066589 1266.800293 1966.666626 1716.666748
+addedge 1846.666626 -55.066559 1806.666626 751.333435
+addedge 1083.333374 362.800262 1806.666626 751.333435
+addedge 896.666748 868.666687 1806.666626 751.333435
+addedge 956.666748 -11.999954 1806.666626 751.333435
+addedge 1740.000000 -850.000122 1846.666626 -55.066559
+addedge 1040.000000 -546.933044 1846.666626 -55.066559
+addedge 956.666748 -11.999954 1846.666626 -55.066559
+addedge 1096.666748 -1840.000000 2153.333252 -1686.666748
+addedge 1740.000000 -850.000122 2153.333252 -1686.666748
+addedge 886.666748 -1253.599731 2153.333252 -1686.666748
+addedge 236.666748 -2000.000000 1096.666748 -1840.000000
+addedge 886.666748 -1253.599731 1096.666748 -1840.000000
+addedge -508.666534 -1970.000000 236.666748 -2000.000000
+addedge -138.133301 -1221.599731 236.666748 -2000.000000
+addedge 886.666748 -1253.599731 236.666748 -2000.000000
+addedge -1620.000000 -1847.733398 -508.666534 -1970.000000
+addedge -1239.466553 -1110.266235 -508.666534 -1970.000000
+addedge -138.133301 -1221.599731 -508.666534 -1970.000000
+addedge -1836.666626 -890.000122 -1620.000000 -1847.733398
+addedge -1239.466553 -1110.266235 -1620.000000 -1847.733398
+addedge -1850.000000 145.999832 -1836.666626 -890.000122
+addedge -1239.466553 -1110.266235 -1836.666626 -890.000122
+addedge -1028.533325 29.333374 -1836.666626 -890.000122
+addedge -2193.333252 978.266479 -1850.000000 145.999832
+addedge -1236.666748 530.800232 -1850.000000 145.999832
+addedge -1028.533325 29.333374 -1850.000000 145.999832
+addedge -1236.666748 530.800232 -2193.333252 978.266479
+addedge 886.666748 -1253.599731 1740.000000 -850.000122
+addedge 1040.000000 -546.933044 1740.000000 -850.000122
+addedge 565.066589 1266.800293 790.000061 1813.333374
+addedge -591.199951 776.000000 -1236.666748 530.800232
+addedge -1028.533325 29.333374 -1236.666748 530.800232
+addedge 565.066589 1266.800293 -566.666748 1304.133545
+addedge -591.199951 776.000000 -566.666748 1304.133545
+addedge 896.666748 868.666687 565.066589 1266.800293
+addedge 1040.000000 -546.933044 1083.333374 362.800262
+addedge 896.666748 868.666687 1083.333374 362.800262
+addedge 886.666748 -1253.599731 1040.000000 -546.933044
+addedge 211.466660 -741.733276 1040.000000 -546.933044
+addedge 956.666748 -11.999954 1040.000000 -546.933044
+addedge -138.133301 -1221.599731 886.666748 -1253.599731
+addedge 211.466660 -741.733276 886.666748 -1253.599731
+addedge -1239.466553 -1110.266235 -138.133301 -1221.599731
+addedge -713.866638 -674.666626 -138.133301 -1221.599731
+addedge 211.466660 -741.733276 -138.133301 -1221.599731
+addedge -1028.533325 29.333374 -1239.466553 -1110.266235
+addedge -713.866638 -674.666626 -1239.466553 -1110.266235
+addedge 896.666748 868.666687 956.666748 -11.999954
+border_left -2500.000000
+border_right 2500.000000
+border_top -2500.000000
+border_bottom 2500.000000
+spawn_players
+# END GENERATED CODE
+
+#allied missile turrets
+bot_once defendearth_turret1  400  0   superturret 1
+bot_once defendearth_turret2 -400  0   superturret 1
+bot_once defendearth_turret3    0  400 superturret 1
+bot_once defendearth_turret4    0 -400 superturret 1
+
+let botspawn_bottomleft  = -2000  2000
+let botspawn_bottomright =  2000  2000
+let botspawn_topleft     = -2000 -2000
+let botspawn_topright    =  2000 -2000
+let bossspawn            =  0     2000
+
+let botSpawnTime      = 35
+let bossSpawnTime     = 60
+
+let botSpawnTimeStep  = 2
+let bossSpawnTimeStep = 2
+
+fun time_bot {
+	unset bot_timer;
+	trigger add_enemy bot_timer;
+	timer bot_timer $1
+}
+fun add_enemy {
+	addbot $botspawn_bottomleft;
+	addbot $botspawn_bottomright;
+	addbot $botspawn_topleft;
+	addbot $botspawn_topright;
+	say "Incoming enemy wing!";
+	time_bot $botSpawnTime;
+	add botSpawnTime $botSpawnTime -$botSpawnTimeStep
+}
+fun time_boss {
+	unset boss_timer;
+	trigger add_boss boss_timer;
+	timer boss_timer $1
+}
+fun add_boss {
+	addbot $bossspawn boss;
+	say "Incoming enemy super-fighter!";
+	time_boss $bossSpawnTime;
+	add bossSpawnTime $bossSpawnTime -$bossSpawnTimeStep
+}
+
+#game over if you lose all of your turrets
+fun setup_trigger {
+	timer wormhole_timer $1;
+	timer reinforcements_timer $2;
+	time_bot  10;
+	time_boss 35;
+	trigger "fade_map defendearth"
+		killed_defendearth_turret1
+		killed_defendearth_turret2
+		killed_defendearth_turret3
+		killed_defendearth_turret4
+}
+trigger new_wormhole wormhole_timer
+
+fun new_wormhole {
+	wormhole 0 -600 endlevel;
+	say "Command: A new wormhole has appeared!"
+}
+trigger "fade_map final" endlevel
+
+fun reinforcements_arrived {
+	say "Command: Reinforcements have arrived!";
+	say "Command: Good work, pilot.  We will take over from here.";
+	say "Command: Proceed to the wormhole to your next objective."
+}
+trigger reinforcements_arrived reinforcements_timer
+
+fun turret1died { say "Turret #1 has been destroyed!"}
+fun turret2died { say "Turret #2 has been destroyed!"}
+fun turret3died { say "Turret #3 has been destroyed!"}
+fun turret4died { say "Turret #4 has been destroyed!"}
+
+trigger turret1died killed_defendearth_turret1
+trigger turret2died killed_defendearth_turret2
+trigger turret3died killed_defendearth_turret3
+trigger turret4died killed_defendearth_turret4
+
+#launch some powerups to the player periodically
+autopowerup 0 -700 autolasers 35 laser
+autopowerup 600 0 autohealth 50 heal
+autopowerup -340 -360 autoshield 60 shield
+autopowerup 340 -360 automissiles 30 missiles
+autopowerup 320 300 autohoming 60 homing
+autopowerup -320 320 autofireball 120 fireballs
+
+#allied bots
+#...spawn 2 more allied fighters if your 2 allies are dead
+#...and the timer is ready for it.
+fun time_allies {
+	unset allies_timer;
+	bot_on_die $ally1ID ally1Trig;
+	bot_on_die $ally2ID ally2Trig;
+	
+	trigger add_allies allies_timer ally1Trig ally2Trig;
+	unset ally1Trig;
+	unset ally2Trig;
+	
+	timer allies_timer $1
+}
+
+fun add_allies {
+	addbot -621.333313 447.200012 allybot 1;
+	let ally1ID = $_;
+	addbot 866.666626 427.066681 allybot 1;
+	let ally2ID = $_;
+	say "Command: Allied fighters have arrived!";
+	time_allies 30;
+}
+
+#initial allied bots
+add_allies
+
+#time_powerup_health          50
+#time_powerup_laser           1
+#time_powerup_missiles        2
+#time_powerup_homing_missiles 15
+#time_powerup_fireballs       120
+
+#...disabling shields for now
+#time_powerup_shields        60
+
+setup_trigger 300 302
+
+cl briefing "MESSAGE FROM UTO COMMAND --
+
+Bad news, pilot.  The enemy has followed us home.\
+Our radar just picked up a large enemy force heading for Earth.\
+We\'ve detected a wing of fighters as well as a few super-fighters.
+
+None of our capital ships will be ready for warp drive in time, so you\'ll\
+have to head there yourself and hold them off until reinforcements arrive.\
+We\'ve deployed four reinforced turrets, and we\'ll also periodically launch
+powerups and unmanned fighters into orbit to assist you.
+
+Make no mistake, you\'re still going to have a tough fight ahead of you,\
+so stay sharp.  If we lose those turrets, then the MDF will occupy Earth,\
+and our entire mission will be over.
+
+Earth\'s future depends on you.  We\'ve ventured too far and sacrificed too much\
+to be defeated now. This is your chance to be a hero, pilot.  Good luck.
+
+-- END MESSAGE
+
+OBJECTIVES:
+
+- Protect Earth\'s planetary defenses until backup arrives."
+
+cl show_radar 1
+cl soundtrack "sounds/Battlefront.mp3"
+
+trigger "fade_map defendearth" player_died

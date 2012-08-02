@@ -1,0 +1,74 @@
+Ideas for waypoints:
+--------------------
+
+Server:
+-------
+
+typedef std::map<Position, WaypointMarker *> WaypointPool;
+
+WaypointMarker:
+---------------
+
+typedef std::vector<WaypointMarker *> EdgePool;
+
+//new interface
+void addEdgeTo(WaypointMarker *target);
+void removeEdgeTo(WaypointMarker *target);
+bool hasEdgeTo(WaypointMarker *target);
+WaypointMarker *getNearestNeighbor();
+WaypointMarker *getRandomNeighbor();
+
+
+-Since we're going to add a whole bunch of waypoints, it becomes prohibitive to 
+assign them all names.  The purpose of naming the waypoints was for somewhat 
+random access, but I suppose we don't really need it.
+
+The level editing for waypoints, just like anything else, will be mouse driven.
+In this case, you don't need to precisely click on a waypoint to modify edges; 
+you can just snap the edge to the nearest destination waypoint.  Therefore, 
+the addedge console command won't take two names of waypoints, but will instead 
+take two positions as arguments.  It will iterate through the server's waypoints
+to find out which ones are the closest to the specified positions.
+
+This should be fine in terms of performance, because level editing stuff is very
+unintensive and is not concurrent with gameplay.
+
+-Before, the WaypointMarker methods would access other waypoints by accessing 
+the old std::map<std::string, WaypointMarker *> map.  Now, when you call a 
+server console command, say addedge x1 y1 x2 y2:
+
+    //...make sure the two positions aren't exactly equal
+    Position pos1 = Position(x1, y1);
+    Position pos2 = Position(x2, y2);
+    WaypointMarker *waypoint1 = server->waypoints.find(pos1);
+    //...handle if not found
+    WaypointMarker *waypoint2 = server->waypoints.find(pos2);
+
+    //...make sure connection doesn't already exist, using hasEdgeTo()
+    waypoint1->addEdgeTo(waypoint2);
+    ...etc...
+    
+
+...Thus, the error checking is done in the server console command, because the
+console print statements are handy.  The WaypointMarker methods will have less
+responsibility.
+
+
+-To resolve the issue of drawing the edges between waypoints...
+We could make a special WaypointEdge type that only contains two Positions, 
+(points required for a line) and maybe some extra data.  
+Useful information could be the length of the edge.  This could be handy to 
+have, since the distances won't change during gameplay, and moving a waypoint
+around during level editing would require recalculating its edge's lengths, but
+this is acceptable.  Hence, the bots would not have to constantly recalculate 
+lengths.
+
+-For the actual drawing though, I suppose we could just have the Entity base 
+class have a vector of adjacent WaypointEdges, or have some virtual method
+that allows us to determine if an entity is in fact a WaypointMarker.
+We could then have messages corresponding to adding, removing, and updating an
+edge.
+
+
+-Hopefully this is enough to get the waypoint graph up and running.  I'll then
+try some pathfinding junk for the bot to navigate through.

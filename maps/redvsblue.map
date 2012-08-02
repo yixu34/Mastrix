@@ -1,0 +1,79 @@
+exec "ctf.cfg"
+
+# BEGIN GENERATED CODE
+addent 64.000000 640.000000 "images/star1.png" 1.000000 0.000000 " "
+addent 64.000000 -704.000000 "images/star1.png" 1.000000 0.000000 " "
+addent -704.000000 -832.000000 "images/beam.png" 1.000000 -1.570796 " " nobound rect
+addent -704.000000 832.000000 "images/beam.png" 1.000000 1.570796 " " nobound rect
+addent 832.000000 -832.000000 "images/beam.png" 1.000000 1.570796 " " nobound rect
+addent 832.000000 832.000000 "images/beam.png" 1.000000 1.570796 " " nobound rect
+addent -2944.000000 -192.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent -2944.000000 96.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent 2984.015625 -192.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent 2976.000000 96.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent -1856.000000 -384.000000 "images/moon-io.png" 1.000000 0.000000 " "
+addent 1920.000000 576.000000 "images/planet-earth.png" 1.000000 0.000000 " "
+addspawn 2816.000000 -352.000000 3.141593 4
+addspawn 3136.000000 -352.000000 3.141593 4
+addspawn 2816.000000 256.000000 3.050933 4
+addspawn 3136.000000 256.000000 3.141593 4
+addspawn 3360.000000 -64.000000 -3.064821 4
+addspawn 2592.000000 -64.000000 3.141593 4
+addspawn 2976.000000 -576.000000 3.141593 4
+addspawn 2976.000000 480.000000 -3.070285 4
+addspawn -3328.000000 -64.000000 0.000000 3
+addspawn -2560.000000 -64.000000 0.000000 3
+addspawn -2784.000000 -320.000000 0.000000 3
+addspawn -3104.000000 -320.000000 0.000000 3
+addspawn -2784.000000 224.000000 0.000000 3
+addspawn -3104.000000 224.000000 0.000000 3
+addspawn -2944.000000 -512.000000 0.000000 3
+addspawn -2944.000000 448.000000 0.000000 3
+addregion red_flagdrop -3200.000000 -160.000000 -2688.000000 64.000000
+addregion blue_flagdrop 2720.000000 -160.000000 3232.000000 64.000000
+addwaypoint -2944.000000 32.000000
+border_left -3500.000000
+border_right 3500.000000
+border_top -1100.000000
+border_bottom 1100.000000
+spawn_players
+# END GENERATED CODE
+
+addent -712.000000 0 "images/planet-fire.png" 1.000000 0.000000 " "
+orbit_center -712 0 0.4
+orbiter -717.333374 -419.999908 "images/moon-rhea.png" 0.500000 0.000000 " "
+addent 832.000000 0.000000 "images/planet-water.png" 1.000000 0.000000 " "
+orbit_center 832 0 0.4
+orbiter 826.666626 413.333405 "images/moon-enceladus.png" 0.500000 0.000000 " "
+
+autopowerup  1216  -64 p1 20 random
+autopowerup -1088    0 p2 20 random
+autopowerup  2304  576 p3 20 random
+autopowerup -2304 -384 p4 20 random
+
+red_flagpos -3136 -96
+red_flagpos -3136   0
+red_flagpos -3040 -96
+red_flagpos -3040   0
+red_flagpos -2944 -96
+red_flagpos -2944   0
+red_flagpos -2848 -96
+red_flagpos -2848   0
+red_flagpos -2752 -96
+red_flagpos -2752   0
+
+blue_flagpos 2784 -96
+blue_flagpos 2784   0
+blue_flagpos 2880 -96
+blue_flagpos 2880   0
+blue_flagpos 2976 -96
+blue_flagpos 2976   0
+blue_flagpos 3072 -96
+blue_flagpos 3072   0
+blue_flagpos 3168 -96
+blue_flagpos 3168   0
+
+give_flags
+
+cl soundtrack "sounds/spacerock.mp3"
+

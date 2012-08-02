@@ -1,0 +1,76 @@
+Milestone 1
+
+Features:
+  Playable DM in split-screen
+  X Camera control
+    X Scroll starfield
+    X Send from server
+  X Handle collisions/death
+  X Split-screen mode
+  X Simple sound effects
+  X Complete scripting system
+
+Due: Wed 2 Mar
+
+
+Milestone 2
+
+Features:
+	X Single-player objectives/level sequence
+	  X Triggers
+	    X Execute some command on trigger
+	    X Triggered by AI deaths
+	    X Triggered by hitting an edge
+	    X Triggered by entering a region
+	      X Client display for regions
+	    X Manage unsetting vars
+	    X Build an example level
+	  X Briefings
+	X Level editting mode
+	  X Stop time
+	  X Select entities
+	  X Manipulate selected entity
+	  X Save to file
+	  X Clear entities
+	  X In-game menu
+	X Playable AI opponent
+	X Networked multiplayer
+	X Some music
+Due: 16 Mar
+
+
+Milestone 3
+
+Features:
+	~ Alien team ship/weapon designs
+	X Human team ship/weapon designs
+	~ Playable on CSUGLab (good performance)
+	X Graphical effects
+	  X Ship explosions
+	  X Weapon effect
+	  X Engine effect
+	X Varied weapons
+	X Radar
+	X Title screen
+Due: 6 April
+
+
+Milestone 4
+
+Features:
+	~ Ship/loadout picker
+	X Design interesting levels
+	  Multiplayer game modes
+	~ Multiplayer levels
+	X Gravity
+	~ Complete soundtrack
+Due:  20 April
+
+
+Milestone 5 (release)
+
+Features:
+	Balanced
+	Debugged
+Due: 4 May
+

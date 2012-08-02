@@ -1,0 +1,317 @@
+laser_num 3
+laser_level 3
+start_missiles 150
+
+# BEGIN GENERATED CODE
+addent 1472.000000 2304.000000 "images/junction-big.png" 1.000000 0.000000 " " nobound rect
+addent 1472.000000 -2816.000000 "images/junction-big.png" 1.000000 0.000000 " " nobound rect
+addent 1472.000000 -2496.000000 "images/beam.png" 1.000000 1.570796 " " nobound rect
+addent 1472.000000 -2176.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 1472.000000 -1856.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent 1472.000000 -1536.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 1472.000000 -1216.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent 1472.000000 -896.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 1472.000000 -576.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent 1472.000000 704.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent 1472.000000 1024.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 1472.000000 1344.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent 1472.000000 1664.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 1472.000000 1984.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent 1472.000000 2944.000000 "images/junction-big.png" 1.000000 0.000000 " " nobound rect
+addent 1472.000000 2624.000000 "images/beam.png" 1.000000 -1.570796 " " nobound rect
+addent 2816.000000 -1728.000000 "images/planet-fire.png" 3.000000 0.000000 " "
+addent 2880.000000 1920.000000 "images/planet-ice.png" 1.900000 0.000000 " "
+addspawn -1920.000000 0.000000 0.000000 0
+addregion spawn_bots_region 874.000000 -481.000000 1940.000000 606.000000
+addwaypoint 1472.000000 -64.000000
+addwaypoint 1472.000000 192.000000
+addwaypoint 768.000000 -64.000000
+addwaypoint 768.000000 256.000000
+addwaypoint 768.000000 -576.000000
+addwaypoint 974.933167 -1856.666748
+addwaypoint -256.666779 -2043.333374
+addwaypoint -817.066772 -1472.933350
+addwaypoint -64.000000 -1152.000000
+addwaypoint -1472.000000 -2432.000000
+addwaypoint -1472.000000 -576.000000
+addwaypoint -1408.000000 512.000000
+addwaypoint -1536.000000 2560.000000
+addwaypoint -128.000000 960.000000
+addwaypoint -832.000000 1728.000000
+addwaypoint 384.000000 1920.000000
+addwaypoint 0.000000 2624.000000
+addwaypoint 896.000000 -2624.000000
+addwaypoint 896.000000 2560.000000
+addwaypoint 1024.000000 1344.000000
+addwaypoint 1984.000000 -2688.000000
+addwaypoint 1843.333496 -1910.000122
+addwaypoint 1792.000000 -1088.000000
+addwaypoint 2176.000000 -576.000000
+addwaypoint 2240.000000 576.000000
+addwaypoint 1856.000000 1280.000000
+addwaypoint 1920.000000 2176.000000
+addwaypoint 2624.000000 2752.000000
+addwaypoint 3648.000000 2752.000000
+addwaypoint 3712.000000 1728.000000
+addwaypoint 3008.000000 -2752.000000
+addwaypoint 3840.000000 -2368.000000
+addwaypoint 3840.000000 -1472.000000
+addwaypoint 3520.000000 -704.000000
+addwaypoint 3456.000000 704.000000
+addwaypoint 3712.000000 192.000000
+addwaypoint 2624.000000 64.000000
+addwaypoint 2816.000000 1152.000000
+addwaypoint -384.000000 -64.000000
+addwaypoint 984.533142 -63.533325
+addwaypoint 973.866455 232.466660
+addwaypoint 924.533142 -571.533325
+addwaypoint 855.599976 -1523.333374
+addwaypoint 850.266602 -2410.000000
+addwaypoint 897.866577 1011.266602
+addwaypoint 905.866577 1904.599854
+addwaypoint 873.866577 2676.666748
+addwaypoint 164.799835 -1826.666748
+addwaypoint 191.466507 -940.000122
+addwaypoint 196.266510 -265.333466
+addwaypoint 209.599838 493.866516
+addwaypoint 172.266495 1373.866455
+addwaypoint 180.266510 2283.333496
+addedge 2176.000000 -576.000000 1472.000000 -64.000000
+addedge 984.533142 -63.533325 1472.000000 -64.000000
+addedge 2240.000000 576.000000 1472.000000 192.000000
+addedge 973.866455 232.466660 1472.000000 192.000000
+addedge 768.000000 -576.000000 768.000000 -64.000000
+addedge -384.000000 -64.000000 768.000000 -64.000000
+addedge 768.000000 256.000000 768.000000 -64.000000
+addedge -128.000000 960.000000 768.000000 256.000000
+addedge 1024.000000 1344.000000 768.000000 256.000000
+addedge -64.000000 -1152.000000 768.000000 -576.000000
+addedge 974.933167 -1856.666748 768.000000 -576.000000
+addedge -64.000000 -1152.000000 974.933167 -1856.666748
+addedge -256.666779 -2043.333374 974.933167 -1856.666748
+addedge 896.000000 -2624.000000 974.933167 -1856.666748
+addedge -64.000000 -1152.000000 -256.666779 -2043.333374
+addedge -817.066772 -1472.933350 -256.666779 -2043.333374
+addedge 896.000000 -2624.000000 -256.666779 -2043.333374
+addedge -1472.000000 -2432.000000 -256.666779 -2043.333374
+addedge -1472.000000 -576.000000 -817.066772 -1472.933350
+addedge -64.000000 -1152.000000 -817.066772 -1472.933350
+addedge -1472.000000 -2432.000000 -817.066772 -1472.933350
+addedge -384.000000 -64.000000 -64.000000 -1152.000000
+addedge -1472.000000 -576.000000 -1472.000000 -2432.000000
+addedge 896.000000 -2624.000000 -1472.000000 -2432.000000
+addedge -1408.000000 512.000000 -1472.000000 -576.000000
+addedge -384.000000 -64.000000 -1472.000000 -576.000000
+addedge -128.000000 960.000000 -1408.000000 512.000000
+addedge -832.000000 1728.000000 -1408.000000 512.000000
+addedge -1536.000000 2560.000000 -1408.000000 512.000000
+addedge 1024.000000 1344.000000 -1408.000000 512.000000
+addedge -832.000000 1728.000000 -1536.000000 2560.000000
+addedge 0.000000 2624.000000 -1536.000000 2560.000000
+addedge -384.000000 -64.000000 -128.000000 960.000000
+addedge -832.000000 1728.000000 -128.000000 960.000000
+addedge 384.000000 1920.000000 -128.000000 960.000000
+addedge 384.000000 1920.000000 -832.000000 1728.000000
+addedge 0.000000 2624.000000 -832.000000 1728.000000
+addedge 1024.000000 1344.000000 384.000000 1920.000000
+addedge 896.000000 2560.000000 384.000000 1920.000000
+addedge 0.000000 2624.000000 384.000000 1920.000000
+addedge 896.000000 2560.000000 0.000000 2624.000000
+addedge 1024.000000 1344.000000 896.000000 2560.000000
+addedge 3008.000000 -2752.000000 1984.000000 -2688.000000
+addedge 1843.333496 -1910.000122 1984.000000 -2688.000000
+addedge 1792.000000 -1088.000000 1843.333496 -1910.000122
+addedge 2176.000000 -576.000000 1792.000000 -1088.000000
+addedge 2624.000000 64.000000 2176.000000 -576.000000
+addedge 3520.000000 -704.000000 2176.000000 -576.000000
+addedge 1856.000000 1280.000000 2240.000000 576.000000
+addedge 2816.000000 1152.000000 2240.000000 576.000000
+addedge 3456.000000 704.000000 2240.000000 576.000000
+addedge 2624.000000 64.000000 2240.000000 576.000000
+addedge 1920.000000 2176.000000 1856.000000 1280.000000
+addedge 2816.000000 1152.000000 1856.000000 1280.000000
+addedge 2624.000000 2752.000000 1920.000000 2176.000000
+addedge 3648.000000 2752.000000 2624.000000 2752.000000
+addedge 3712.000000 1728.000000 3648.000000 2752.000000
+addedge 2816.000000 1152.000000 3712.000000 1728.000000
+addedge 3456.000000 704.000000 3712.000000 1728.000000
+addedge 3840.000000 -2368.000000 3008.000000 -2752.000000
+addedge 3840.000000 -1472.000000 3840.000000 -2368.000000
+addedge 3520.000000 -704.000000 3840.000000 -1472.000000
+addedge 3712.000000 192.000000 3520.000000 -704.000000
+addedge 2624.000000 64.000000 3520.000000 -704.000000
+addedge 2816.000000 1152.000000 3456.000000 704.000000
+addedge 3712.000000 192.000000 3456.000000 704.000000
+addedge 2624.000000 64.000000 3712.000000 192.000000
+addedge 924.533142 -571.533325 984.533142 -63.533325
+addedge 196.266510 -265.333466 984.533142 -63.533325
+addedge 897.866577 1011.266602 973.866455 232.466660
+addedge 209.599838 493.866516 973.866455 232.466660
+addedge 855.599976 -1523.333374 924.533142 -571.533325
+addedge 191.466507 -940.000122 924.533142 -571.533325
+addedge 850.266602 -2410.000000 855.599976 -1523.333374
+addedge 191.466507 -940.000122 855.599976 -1523.333374
+addedge 164.799835 -1826.666748 855.599976 -1523.333374
+addedge 164.799835 -1826.666748 850.266602 -2410.000000
+addedge 905.866577 1904.599854 897.866577 1011.266602
+addedge 172.266495 1373.866455 897.866577 1011.266602
+addedge 873.866577 2676.666748 905.866577 1904.599854
+addedge 180.266510 2283.333496 905.866577 1904.599854
+addedge 180.266510 2283.333496 873.866577 2676.666748
+addedge 191.466507 -940.000122 164.799835 -1826.666748
+addedge 196.266510 -265.333466 191.466507 -940.000122
+addedge 209.599838 493.866516 196.266510 -265.333466
+addedge 172.266495 1373.866455 209.599838 493.866516
+addedge 180.266510 2283.333496 172.266495 1373.866455
+border_left -2000.000000
+border_right 4000.000000
+border_top -2900.000000
+border_bottom 3000.000000
+spawn_players
+# END GENERATED CODE
+
+#some special super-duper enemy ship types for the last level!
+add_ship_type final_missileturret images/station.png 0.75 75 9 0 0 0 0 50 0 0 1 0
+add_ship_type final_turret        images/station.png 0.75 75 9 0 0 0 0 50 0 0 1 0
+add_ship_type final_enemyship     images/player1.png 1.0 22  10 600 600 600 600 25			  0 1 1 0
+add_ship_type final_boss          images/ship2.png   1.0 150 10 400 400 400 400 500           0 1 1 0 bossmount
+
+#super allied ships!
+add_ship_type final_allyship      images/player2.png 1.0 22 10 600 600 600 600    20          0 1 1 0
+
+#...and give them weapons
+add_weapon_to_shiptype final_missileturret missiles 0 100000
+add_weapon_to_shiptype final_turret        laser 0 2 3 0.15 800
+add_weapon_to_shiptype final_allyship      laser 0 3 2 0.15 750
+add_weapon_to_shiptype final_enemyship     laser 0 3 3 0.15 750
+add_weapon_to_shiptype final_boss          laser 0 4 3 0.10  810 bossmount
+
+#place the wall turrets
+fun place_turrets {
+	bot_repeating final_turret1 1200 -2820.000244 final_missileturret;
+	bot_repeating final_turret2 1200 -2181.666748 final_turret;
+	bot_repeating final_turret3 1200 -1543.368652 final_missileturret;
+	bot_repeating final_turret4 1200 -895.701965  final_turret;
+	bot_repeating final_turret5 1200 -256.302002  final_missileturret;
+	bot_repeating final_turret6 1200 382.431335   final_turret;
+	bot_repeating final_turret7 1200 1023.364563  final_missileturret;
+	bot_repeating final_turret8 1200 1660.831299  final_turret;
+	bot_repeating final_turret9 1200 2303.631348  final_missileturret;
+	bot_repeating final_turret10 1200 2943.333496  final_turret
+}
+trigger "powerup 1200 -2820.000244 homing" killed_final_turret1
+trigger "powerup 1200 -1543.368652 homing" killed_final_turret3
+trigger "powerup 1200 -256.302002 homing" killed_final_turret5
+trigger "powerup 1200 1023.364563 homing" killed_final_turret7
+trigger "powerup 1200 2303.631348 homing" killed_final_turret9
+
+place_turrets
+
+#place the starting allied bots
+fun place_allies {
+	addbot -1760.000122 648.000000 final_allyship 1;
+	addbot -1706.666748 290.666656 final_allyship 1;
+	addbot -1700.000122 -173.333328 final_allyship 1;
+	addbot -1713.333374 -557.333313 final_allyship 1;
+	#addbot -1343.333374 -1149.333252 final_allyship 1;
+	addbot -1303.333374 -392.000000 final_allyship 1;
+	addbot -1293.333374 162.666656 final_allyship 1;
+	addbot -1300.000122 546.666626 final_allyship 1;
+	#addbot -1303.333374 1176.000000 final_allyship 1;
+	#addbot -1680.000122 -1080.400024 final_allyship 1;
+	addbot -1710.000122 996.666626 final_allyship 1
+}
+
+place_allies
+
+timer spawn_enemies_timer 5
+
+fun spawn_enemies {
+	say "Command:  Incoming enemy fighters!  Take evasive action!";
+	
+	bot_repeating final_enemyship1  1837.999878 -1571.066772 final_enemyship;
+	bot_repeating final_enemyship2  1810.533081 -1148.400024 final_enemyship;
+	bot_repeating final_enemyship3  2071.866455 -707.066772  final_enemyship;
+	bot_repeating final_enemyship4  2167.866455 -257.066772  final_enemyship;
+	bot_repeating final_enemyship5  2199.866455 263.599884  final_enemyship;
+	bot_repeating final_enemyship6  2066.533203 850.266541  final_enemyship;
+	bot_repeating final_enemyship7  1938.533081 1244.933228 final_enemyship;
+	bot_repeating final_enemyship8  1923.066406 1819.066528 final_enemyship;
+	bot_repeating final_enemyship9  1981.733154 2570.000000 final_enemyship;
+	bot_repeating final_enemyship10 1837.733276 -2396.666748 final_enemyship
+}
+
+trigger spawn_enemies spawn_enemies_timer
+
+timer spawn_boss_timer 25
+
+fun spawn_boss {
+	say "Mastrix mothership:  Damn you humans.  Your insatiable greed has destroyed";
+	say "                     our land and robbed us of our precious resources.  We";
+	say "                     came to you in peace, and yet you slaughtered us like";
+	say "                     space-chickens.";
+	say "                     It seems that you only understand violence and brutality.  So be it...";
+	bot_repeating final_boss 2000 0 final_boss
+}
+
+trigger spawn_boss spawn_boss_timer
+
+fun setup_win_trigger {
+	trigger game_completed 
+				killed_final_turret1
+				killed_final_turret2
+				killed_final_turret3
+				killed_final_turret4
+				killed_final_turret5
+				killed_final_turret6
+				killed_final_turret7
+				killed_final_turret8
+				killed_final_turret9
+				killed_final_turret10
+				killed_final_enemyship1
+				killed_final_enemyship2
+				killed_final_enemyship3
+				killed_final_enemyship4
+				killed_final_enemyship5
+				killed_final_enemyship6
+				killed_final_enemyship7
+				killed_final_enemyship8
+				killed_final_enemyship9
+				killed_final_enemyship10
+				killed_final_boss
+}
+
+setup_win_trigger
+
+trigger "fade_map final" player_died
+
+cl show_radar 1
+cl briefing "MESSAGE FROM UTO COMMAND --
+
+All of your skill and courage has paid off, pilot.  Operation Mastrix\
+has been a great success.  We\'ve gathered enough oil to last us for\
+centuries, and we\'ve also expanded Earth\'s territory in space\
+and enslaved most of the Mastrix population.
+
+But our work here isn\'t done just yet.  The MDF has rallied\
+the remainder of its fleet at its last stronghold,\
+and we need you to wipe them out to ensure our victory.\
+You will lead a squadron of our \'leetest\' fighters in a final attack.\
+Beware - the MDF has upgraded their basic fighters with new engines\
+and laser cannons, so don\'t expect them\
+to be easy prey.  Their base is also guarded with upgraded laser\
+and missile turrets, which will make your job even harder.
+
+We also expect the Mastrix mothership to be defending the base,\
+so stay alert.  It\'s heavily armed and can out-maneuver any ship.\
+Destroy everything, and our victory will be complete.
+
+Make us proud.
+
+-- END MESSAGE
+
+OBJECTIVES:
+
+- Destroy all enemy defenses."
+
+cl soundtrack "sounds/Intensity.mp3"

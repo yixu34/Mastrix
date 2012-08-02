@@ -1,0 +1,12 @@
+# BEGIN GENERATED CODE
+addspawn -11.767677 -484.195770 0.000000
+addspawn 7.421812 498.608612 3.136738
+addspawn 495.333252 -16.666706 -1.570796
+addspawn -513.000061 6.666625 1.570796
+border_left -400
+border_right 400
+border_top -1000
+border_bottom 1200
+# spawn_players
+# END GENERATED CODE
+

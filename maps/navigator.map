@@ -1,0 +1,108 @@
+laser_num 2
+laser_level 1
+
+# BEGIN GENERATED CODE
+addent 3531.666748 -51.659760 "images/star1.png" 0.250000 -2.731793 " " nocollide
+addent 3363.333252 10.840271 "images/planet-ice.png" 0.100000 0.000000 " " nocollide
+addent 3628.333252 -175.826401 "images/moon-io.png" 0.100000 0.000000 " " nocollide
+addent 3506.666748 98.340240 "images/planet-jupiter.png" 0.150000 0.000000 " " nocollide
+addent 3683.333252 50.200050 "images/moon-enceladus.png" 0.050000 0.000000 " " nocollide
+
+addent 1643.333374 -309.999939 "images/ast-small.png" 0.500000 0.000000 " " nomass
+addent 1873.333374 -89.999969 "images/ast-small.png" 0.500000 0.000000 " " nomass
+addent 2105.833008 375.833374 "images/ast-small.png" 0.500000 0.000000 " " nomass
+addent 1906.666626 546.666748 "images/ast-small.png" 0.500000 0.000000 " " nomass
+addent 2056.666748 96.666718 "images/ast-small.png" 0.600000 0.000000 " " nomass
+addent 2017.499756 -42.499939 "images/ast-small.png" 0.700000 0.000000 " " nomass
+addent 1530.000000 -533.333252 "images/ast-small.png" 0.330000 0.000000 " " nomass
+addent 1443.333374 -403.333282 "images/ast-small.png" 0.500000 0.000000 " " nomass
+addent 1873.333374 -226.666626 "images/ast-small.png" 0.330000 0.000000 " " nomass
+addent 1780.000000 -316.666626 "images/ast-small.png" 0.500000 0.000000 " " nomass
+addent 1593.333374 -619.999939 "images/ast-small.png" 1.000000 0.000000 " " nomass
+addent 1436.666626 -709.999939 "images/ast-small.png" 0.500000 0.000000 " " nomass
+addent 2016.666626 170.000031 "images/ast-small.png" 0.800000 0.000000 " " nomass
+addent 1983.333374 403.333344 "images/ast-small.png" 0.550000 0.000000 " " nomass
+addent 1933.333374 616.666748 "images/ast-small.png" 0.600000 0.000000 " " nomass
+addent 1936.666626 693.333374 "images/ast-small.png" 0.400000 0.000000 " " nomass
+addent 2043.333374 723.333374 "images/ast-small.png" 0.400000 0.000000 " " nomass
+addent 1913.333374 13.333374 "images/ast-small.png" 0.500000 0.000000 " " nomass
+addent 1583.333374 -433.333282 "images/ast-small.png" 0.330000 0.000000 " " nomass
+addent 1416.666626 -573.333252 "images/ast-small.png" 0.500000 0.000000 " " nomass
+addent 1566.666626 -768.000000 "images/ast-small.png" 0.200000 0.000000 " " nomass
+addent 1756.666626 -233.333298 "images/ast-small.png" 0.500000 0.000000 " " nomass
+addspawn -5850.000000 -33.333313 0.000000
+addregion finish 3260.000000 -248.000000 3760.000000 190.000000
+border_left -6000.000000
+border_right 4000.000000
+border_top -800.000000
+border_bottom 800.000000
+spawn_players
+# END GENERATED CODE
+
+addent -5013.333496 6.666687 "images/star1.png" 0.300000 -3.085176 " "
+orbit_center -5013.333496 6.666687 0.1
+orbiter -5130.000000 190.000031 "images/moon-io.png" 0.200000 0.000000 " "
+orbiter -5240.000000 -133.333282 "images/planet-water.png" 0.100000 -1.292373 " "
+
+addent -2513.333740 407.385162 "images/star1.png" 0.330000 -1.765007 ""
+orbit_center -2513.333740 407.385162 0.1
+orbiter -2506.666748 123.333344 "images/planet-mars.png" 0.100000 0.000000 ""
+orbiter -2733.333252 433.333344 "images/planet-neptune.png" 0.100000 0.000000 ""
+
+addent -1930.000000 -416.666626 "images/star1.png" 0.500000 -1.397658 ""
+orbit_center -1930.000000 -416.666626 0.1
+orbiter -2236.666748 -523.333252 "images/planet-water.png" 0.100000 -0.989415 ""
+orbiter -1826.666626 -613.333252 "images/planet-water.png" 0.100000 -2.653998 ""
+orbiter -2060.000000 -163.333282 "images/planet-water.png" 0.100000 0.540420 ""
+orbiter -1706.666626 -293.333282 "images/planet-water.png" 0.100000 2.130478 ""
+
+addent -1040.000000 -9.999969 "images/star1.png" 0.330000 0.299958 ""
+orbit_center -1040.000000 -9.999969 0.1
+orbiter -1136.250000 -99.999985 "images/planet-fire.png" 0.100000 0.000000 ""
+orbiter -1140.000000 133.333344 "images/planet-fire.png" 0.080000 0.000000 ""
+
+addent 193.750000 -422.500000 "images/star1.png" 0.330000 -1.536591 ""
+orbit_center 193.750000 -422.500000 0.5
+s_orbiter 188.750000 -645.000000 "images/moon-rhea.png" 0.100000 -0.944535 ""
+s_orbiter 336.250000 -247.499985 "images/moon-enceladus.png" 0.100000 -2.702232 ""
+s_orbiter -8.750000 -325.000000 "images/moon-rhea.png" 0.100000 1.220068 ""
+s_orbiter 153.750000 -217.499985 "images/moon-rhea.png" 0.100000 2.028075 ""
+s_orbiter 421.250000 -400.000000 "images/moon-enceladus.png" 0.100000 -1.945477 ""
+s_orbiter -8.750000 -535.000000 "images/moon-rhea.png" 0.100000 0.317635 ""
+s_orbiter 333.750000 -570.000000 "images/moon-enceladus.png" 0.100000 -0.785398 ""
+
+addent 1431.666504 286.666718 "images/star1.png" 0.500000 2.602672 ""
+orbit_center 1431.666504 286.666718 0.1
+orbiter 1384.999756 26.666687 "images/moon-io.png" 0.100000 3.034165 ""
+orbiter 1134.999878 300.000031 "images/moon-io.png" 0.100000 -1.671373 ""
+orbiter 1338.333130 496.666656 "images/moon-io.png" 0.100000 0.000000 ""
+
+addent 2176.666748 -436.666626 "images/star1.png" 0.330000 -1.956761 ""
+
+grav 150
+
+addbot -3193.399658 -119.999969 turret
+addbot -3348.066162 -236.666626 turret
+addbot -3486.732910 -106.666626 turret
+addbot -3337.399658 10.000031   turret
+addbot -4020.000000 386.666656  turret
+addbot -4396.666504 -706.666626 turret
+powerup -3342.732910 -113.333282 laser
+
+trigger "fade_map tanker2" finish
+trigger "fade_map navigator" player_died
+
+cl briefing "MESSAGE FROM UTO COMMAND --
+
+We\'ve located a star system on our starmap that contains many of the resources\
+Earth needs.  There\'s no shortcut, and you\'ll have to fly alone.\
+Resistance is minimal, but be careful making your way there.\
+
+-- END MESSAGE
+
+OBJECTIVES:
+
+- Fly beyond the asteroid belt to the star system with four planets
+- Avoid the gravitational fields of any stars along the way."
+
+cl soundtrack "sounds/ambient2.mp3"

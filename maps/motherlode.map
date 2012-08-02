@@ -1,0 +1,328 @@
+laser_num 2
+laser_level 2
+start_missiles 15
+
+# BEGIN GENERATED CODE
+addent -320.000000 -448.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 320.000000 -448.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -640.000000 -448.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent 640.000000 -448.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent 1152.000000 -448.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent -1152.000000 -448.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent -1472.000000 -448.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -1472.000000 -768.000000 "images/beam.png" 1.000000 1.570796 " " rect
+addent -1472.000000 -1088.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -1792.000000 -1088.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent -2112.000000 -1088.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -2112.000000 -768.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent -2112.000000 -448.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -2752.000000 -448.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -2752.000000 -128.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent -2752.000000 192.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -2432.000000 192.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent -2112.000000 192.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -2112.000000 512.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent -2112.000000 1024.000000 "images/beam.png" 1.000000 1.570796 " " rect
+addent -2112.000000 1344.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -2752.000000 1344.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -2752.000000 1984.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -2432.000000 1984.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent -2112.000000 1984.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -2112.000000 2304.000000 "images/beam.png" 1.000000 1.570796 " " rect
+addent -2112.000000 2624.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -1792.000000 2624.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent -1472.000000 2624.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -1472.000000 2304.000000 "images/beam.png" 1.000000 1.570796 " " rect
+addent -1472.000000 1984.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -1152.000000 1984.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent -640.000000 1984.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent 640.000000 1984.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent 1472.000000 -448.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 1472.000000 -768.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent 1472.000000 -1088.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 1792.000000 -1088.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent 2112.000000 -1088.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 2112.000000 -768.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent 2112.000000 -448.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 2432.000000 -448.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent 2752.000000 -448.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 2752.000000 -128.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent 2752.000000 192.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 2432.000000 192.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent 2112.000000 192.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 2112.000000 512.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent 2112.000000 1024.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent 2112.000000 1344.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 2432.000000 1344.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent 2752.000000 1344.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 2752.000000 1664.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent 2752.000000 1984.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 2432.000000 1984.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent 2112.000000 1984.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 2112.000000 2304.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent 2112.000000 2624.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 1792.000000 2624.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent 1472.000000 2624.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 1472.000000 2304.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent 1472.000000 1984.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 1152.000000 1984.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent -320.000000 1984.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 320.000000 1984.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -320.000000 2304.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent -320.000000 2624.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 320.000000 2624.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 320.000000 2304.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent 0.000000 2624.000000 "images/beam.png" 1.000000 0.000000 " " rect
+mine -2112.000000 1536.000000
+mine -2112.000000 1728.000000
+mine -1920.000000 1984.000000
+mine -1728.000000 1984.000000
+mine 1664.000000 1984.000000
+mine 1856.000000 1984.000000
+mine 2112.000000 -256.000000
+mine 2112.000000 0.000000
+mine 1920.000000 -448.000000
+mine 1664.000000 -448.000000
+powerup -2280.000000 1464.733765 silver
+powerup -2291.666748 1757.666992 silver
+powerup -2385.000000 1838.067017 gold
+powerup -2463.333252 1532.800415 gold
+powerup -2663.333252 1742.067017 silver
+powerup -2630.000000 1728.733765 silver
+powerup -1666.333496 2107.377197 gold
+powerup -1803.333496 2157.510498 silver
+powerup -1848.666870 2370.377197 silver
+powerup -1651.333496 2328.710449 gold
+powerup 1678.999634 2484.310547 gold
+powerup 1750.999634 2187.043701 gold
+powerup 1937.666260 2318.977051 gold
+powerup 1942.999634 2204.310547 silver
+powerup 2651.666748 1534.243774 silver
+powerup 2293.333252 1579.177002 silver
+powerup 2475.000000 1656.310425 gold
+powerup 2578.333252 -269.956177 silver
+powerup 2350.000000 -244.289520 silver
+powerup 2280.000000 40.177147 silver
+powerup 2491.666748 -69.956184 gold
+powerup 1945.666626 -945.956177 gold
+powerup 1633.666748 -916.622864 gold
+powerup 1801.666626 -588.622864 silver
+powerup 1847.000000 -731.489502 gold
+powerup 1652.333374 -647.289490 silver
+mine -2148.266846 -269.800110
+mine -2142.933594 -61.800102
+mine -1681.600220 -451.133423
+powerup -2563.600098 -299.133423 silver
+addent -2432.000000 -448.000000 "images/beam.png" 1.000000 0.000000 " " rect
+mine -1920.000000 -448.000000
+powerup -2432.000000 -320.000000 gold
+powerup -2304.000000 -256.000000 gold
+powerup -2304.000000 -64.000000 silver
+powerup -2624.000000 0.000000 silver
+powerup -1856.000000 -640.000000 gold
+powerup -1664.000000 -960.000000 gold
+powerup -1920.000000 -832.000000 silver
+powerup -1664.000000 -704.000000 silver
+mine 2112.000000 1536.000000
+mine 2112.000000 1728.000000
+powerup -1781.073242 -764.392822 laser
+powerup -2605.073242 -148.392868 missiles
+powerup -2445.073242 -145.726212 missiles
+addent -2432.000000 1344.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent -2752.000000 1664.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+powerup -2624.000000 1536.000000 laser
+powerup -2496.000000 1664.000000 homing
+powerup -1728.000000 2432.000000 fireballs
+powerup 1792.000000 2368.000000 heal
+powerup 1664.000000 2240.000000 homing
+powerup 2240.000000 1792.000000 missiles
+powerup 2432.000000 1792.000000 missiles
+powerup 2496.000000 1536.000000 missiles
+powerup 2560.000000 0.000000 laser
+powerup 1728.000000 -832.000000 missiles
+powerup 1920.000000 -832.000000 missiles
+mine -209.133331 -451.400208
+mine -43.799999 -451.400208
+mine 118.866661 -451.400208
+mine 204.199997 -598.066833
+mine 29.199999 -606.066833
+mine -137.133331 -608.733521
+mine -299.799988 -627.400208
+addspawn 0.000000 -5900.000000 0.000000
+addregion entrance -246.000000 -895.000000 246.000000 -508.000000
+addregion rescue -256.000000 1850.000000 263.000000 2566.000000
+addwaypoint -1013.401855 -1795.595581
+addwaypoint -16.068560 -1763.595581
+addwaypoint 1007.931396 -1715.595581
+addwaypoint 965.264771 -2675.595703
+addwaypoint -16.068560 -2339.595703
+addwaypoint -997.401855 -2782.262207
+addwaypoint 32.331440 -3379.595703
+addwaypoint -1146.735229 -3544.928955
+addwaypoint 1167.931396 -3427.595703
+addwaypoint 1967.931396 -2419.595703
+addwaypoint -1936.068481 -2590.262207
+addwaypoint -1719.323975 1612.583496
+addwaypoint -1749.723999 -89.549835
+addwaypoint -74.990768 30.050171
+addwaypoint 1761.009155 -120.616501
+addwaypoint 1754.742432 1571.450195
+addwaypoint -2.324184 1730.250244
+addwaypoint -1051.657227 756.917175
+addwaypoint 1173.409302 747.983765
+addwaypoint -46.590652 762.650452
+addwaypoint -538.590637 1206.650391
+addwaypoint -701.923950 345.983795
+addwaypoint 789.409302 251.983795
+addwaypoint 672.075989 1243.983765
+addedge -1936.068481 -2590.262207 -1013.401855 -1795.595581
+addedge -997.401855 -2782.262207 -1013.401855 -1795.595581
+addedge -16.068560 -1763.595581 -1013.401855 -1795.595581
+addedge -16.068560 -2339.595703 -1013.401855 -1795.595581
+addedge 32.331440 -3379.595703 -1013.401855 -1795.595581
+addedge 1007.931396 -1715.595581 -16.068560 -1763.595581
+addedge 965.264771 -2675.595703 1007.931396 -1715.595581
+addedge -16.068560 -2339.595703 1007.931396 -1715.595581
+addedge 1967.931396 -2419.595703 1007.931396 -1715.595581
+addedge 32.331440 -3379.595703 1007.931396 -1715.595581
+addedge 32.331440 -3379.595703 965.264771 -2675.595703
+addedge -16.068560 -2339.595703 965.264771 -2675.595703
+addedge 1967.931396 -2419.595703 965.264771 -2675.595703
+addedge 1167.931396 -3427.595703 965.264771 -2675.595703
+addedge -997.401855 -2782.262207 -16.068560 -2339.595703
+addedge -1936.068481 -2590.262207 -997.401855 -2782.262207
+addedge -1146.735229 -3544.928955 -997.401855 -2782.262207
+addedge 32.331440 -3379.595703 -997.401855 -2782.262207
+addedge -1146.735229 -3544.928955 32.331440 -3379.595703
+addedge 1167.931396 -3427.595703 32.331440 -3379.595703
+addedge -1936.068481 -2590.262207 -1146.735229 -3544.928955
+addedge 1967.931396 -2419.595703 1167.931396 -3427.595703
+addedge -2.324184 1730.250244 -1719.323975 1612.583496
+addedge -1749.723999 -89.549835 -1719.323975 1612.583496
+addedge -1051.657227 756.917175 -1719.323975 1612.583496
+addedge -538.590637 1206.650391 -1719.323975 1612.583496
+addedge -74.990768 30.050171 -1749.723999 -89.549835
+addedge -1051.657227 756.917175 -1749.723999 -89.549835
+addedge 1761.009155 -120.616501 -74.990768 30.050171
+addedge -701.923950 345.983795 -74.990768 30.050171
+addedge 789.409302 251.983795 -74.990768 30.050171
+addedge 1754.742432 1571.450195 1761.009155 -120.616501
+addedge 1173.409302 747.983765 1761.009155 -120.616501
+addedge 789.409302 251.983795 1761.009155 -120.616501
+addedge -2.324184 1730.250244 1754.742432 1571.450195
+addedge 1173.409302 747.983765 1754.742432 1571.450195
+addedge 672.075989 1243.983765 1754.742432 1571.450195
+addedge -538.590637 1206.650391 -2.324184 1730.250244
+addedge 672.075989 1243.983765 -2.324184 1730.250244
+addedge -46.590652 762.650452 -1051.657227 756.917175
+addedge -701.923950 345.983795 -1051.657227 756.917175
+addedge -538.590637 1206.650391 -1051.657227 756.917175
+addedge -46.590652 762.650452 1173.409302 747.983765
+addedge 672.075989 1243.983765 1173.409302 747.983765
+addedge 789.409302 251.983795 1173.409302 747.983765
+addedge -701.923950 345.983795 -46.590652 762.650452
+addedge -538.590637 1206.650391 -46.590652 762.650452
+addedge 672.075989 1243.983765 -46.590652 762.650452
+addedge 789.409302 251.983795 -46.590652 762.650452
+border_left -3500.000000
+border_right 3500.000000
+border_top -6000.000000
+border_bottom 3500.000000
+spawn_players
+# END GENERATED CODE
+
+#add the hostage bot
+let hostageStart = 0 2450
+
+#use a super boss ship for this level
+add_ship_type motherlode_boss images/ship2.png   1.0 90 9 500 500 500 500    300         0 1 1 0 bossmount
+#add_weapon_to_shiptype motherlode_boss     laser    0 4 1 0.4 650
+add_weapon_to_shiptype motherlode_boss missiles 0 100000
+
+
+fun setup_hostage {
+	addbot $hostageStart bot 1;
+	say "Col. BBQ:  Thanks for the rescue, pilot.  I\'ll stay here and secure";
+	say "           the area until reinforcements arrive.";
+	
+	let hostageID = $_;
+	let hostageRescued = 1;
+	bot_on_die $hostageID hostageDieTrig;
+	trigger "fade_map motherlode" hostageDieTrig;	
+}
+
+trigger setup_hostage rescue
+
+addspawn 0 -5900
+
+#3*gold + 1*silver
+let totalMoney = 67
+
+fun spawn_boss {
+	bot_once theBoss 0 -2500 motherlode_boss;
+	say "An enemy super-fighter has appeared!";
+	say "Super-fighter:  There is no escape from this place, human.";
+	say "Super-fighter:  I have sealed your wormhole, and you will have to defeat me";
+	say "                if you ever want to return to your precious Earth again!"
+}
+
+fun resources_collected {
+	trigger tell_return hostageRescued
+}
+
+fun tell_return {
+	trigger spawn_boss entrance;
+	say "Command:  Good work, pilot.  Make contact with the colonel if you haven\'t already done so,";
+	say "          and then head back to Earth."
+}
+
+fun allow_exit {
+	say "Command:  Excellent work, pilot!  The wormhole has reopened.  Return to Earth ASAP.";
+	wormhole 0 -5800 endlevel
+}
+trigger "fade_map return_to_earth1" endlevel
+
+trigger allow_exit killed_theBoss
+
+fun check_gold {
+	ifeq money totalMoney resources_collected;
+	unset got_gold;
+	unset got_silver;
+	trigger check_gold got_gold;
+	trigger check_gold got_silver
+}
+
+check_gold
+
+cl briefing "MESSAGE FROM UTO COMMAND --
+
+Well done, pilot.  You\'ve gained entry into the main supply depot. Be sure to gather every last\
+gold and silver bar.  We have plenty of firepower, so you can keep the ammo for yourself.
+
+The depot itself is divided into nine rooms, inside one of which is supposed to\
+be where Colonel BBQ is being held captive.  Find and rescue him, as he is very\
+important person to our operations.  Once you make contact with him, he will stay\
+behind to signal the rest of our fleet to secure the area.
+
+Scanners have detected no presence of enemy fighters or turrets, and a few sparsely\
+placed proximity mines are all that guard the caches.  Beware, though.  As you have\
+already seen, these mines are highly sensitive and will heavily damage your hull.\
+Try to quickly enter and then leave their blast radius, or set them off from a distance\
+by firing missiles at them.  We need above all else for you to get those resources, so you\
+may want to take your time on this.
+
+Good luck.
+
+-- END MESSAGE
+
+OBJECTIVES:
+
+- Collect all the resources inside the station
+- Rescue Col. BBQ
+- Leave the area"
+
+cl show_radar 1
+trigger "fade_map shieldgen" player_died
+
+
+cl soundtrack "sounds/spacerock.mp3"

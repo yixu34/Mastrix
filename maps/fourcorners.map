@@ -1,0 +1,53 @@
+exec deathmatch.cfg
+
+# BEGIN GENERATED CODE
+addent 1344.000000 1472.000000 "images/planet-ice.png" 1.300000 0.000000 " "
+addent -1152.000000 -1216.000000 "images/planet-water.png" 1.200000 0.000000 " "
+addent -1472.000000 1216.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent -832.000000 1216.000000 "images/beam.png" 1.000000 0.000000 " " rect
+addent -1152.000000 1216.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -1792.000000 896.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent -1792.000000 1216.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -1792.000000 576.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -512.000000 1216.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent -1152.000000 1536.000000 "images/beam.png" 1.000000 -1.570796 " " rect
+addent -1152.000000 1856.000000 "images/junction-big.png" 1.000000 0.000000 " " rect
+addent 1152.000000 -1472.000000 "images/moon-rhea.png" 0.500000 0.000000 " "
+addent 1728.000000 -896.000000 "images/moon-enceladus.png" 0.500000 0.000000 " "
+addent 896.000000 -704.000000 "images/moon-io.png" 0.500000 0.000000 " "
+addspawn 1895.000000 292.000000 3.125908 0
+addspawn 175.000000 1755.000000 1.620755 0
+addspawn -2120.000000 -277.200012 0.000000 0
+addspawn 70.000000 -2108.000000 -1.624431 0
+addspawn -1295.000000 880.000000 0.826471 0
+addspawn 1930.000000 -1660.000000 -2.353345 0
+addspawn 2050.000000 1045.000000 2.538754 0
+addspawn -690.000000 2115.000000 0.946773 0
+addspawn -890.000000 -2028.000000 -1.051364 0
+addspawn 1110.000000 -2140.000000 -2.282503 0
+addspawn -1670.000000 -820.000000 -0.688145 0
+addspawn -1990.000000 348.000000 0.704010 0
+addspawn 2125.000000 -452.000000 -2.758457 0
+addspawn 1030.000000 2100.000000 2.356194 0
+border_left -2500.000000
+border_right 2500.000000
+border_top -2500.000000
+border_bottom 2500.000000
+spawn_players
+# END GENERATED CODE
+
+cl soundtrack sounds/ether.mp3
+
+let p_delay = 10
+
+automine 384 512 first 5
+automine -64 -448 second 5 
+automine -640 0 third 5
+automine -384 512 fourth 5
+automine 345.333313 -105.333328 fifth 5
+
+autopowerup -64 64 powerup1 $p_delay random
+autopowerup -384 512 powerup2 $p_delay random
+autopowerup -1856 -1856 powerup3 $p_delay random
+autopowerup 1920 1856 powerup4 $p_delay random
+autopowerup -1664 1728 powerup5 $p_delay random

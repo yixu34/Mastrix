@@ -1,0 +1,37 @@
+Console commands (client)
+bind key command: When key is pressed, execute command.
+echo text: Print the arguments to the console
+exec file: Execute all the commands in file.
+exit: Close the game.
+player pnum command: Execute command as player pnum.
+quit: Close the game.
+showfps: Echo the current framerate.
+toggle_fullscreen: Enter or leave full-screen mode.
+toggleconsole: Open or close the console.
+unbind key: Remove the binding from key.
+unbindall: Clear all keyboard bindings
+
+Console commands (server)
+addbot x y: Add an AI player at (x,y)
+sv_exec file: Execute all the commands in file, as the server.
++brake: Thrust backwards
++left: Turn left
++right: Turn right
++thrust: Thrust forwards
++shooting: Fire
+addent
+dropent
+updateent
+updatecamera
+
+Console variables (client)
+fullscreen: Whether to use full-screen mode
+console_speed: Speed the console moves up and down
+console_height: How much of the screen the console fills
+show_keys: Whether unbound keys should be echoed in console
+
+Console variables (server)
+turn_speed: How fast players turn (rad/s)
+thrust_strength: How fast players accelerate (px/s^2)
+brake_strength: How fast players accelerate backwards (px/s^2)
+

@@ -1,0 +1,90 @@
+laser_num 2
+laser_level 1
+
+# BEGIN GENERATED CODE
+addent 670.000000 77.000000 "images/moon-enceladus.png" 0.125000 -2.010059 " " nocollide
+addent 143.000000 223.000000 "images/planet-jupiter.png" 0.350000 0.000000 " " nocollide
+addent 169.000000 -298.000000 "images/moon-io.png" 0.175000 0.000000 " " nocollide
+addent -37.000000 -185.000000 "images/star1.png" 0.500000 0.000000 ""
+addent -284.000000 116.000000 "images/planet-ice.png" 0.250000 0.000000 " " nocollide
+addspawn -443.000000 -195.000000 0.000000
+addregion crudeoil -346.000000 53.000000 -220.000000 179.000000
+addregion ore 124.000000 -341.000000 209.000000 -255.000000
+addregion gas 58.000000 134.000000 231.000000 309.000000
+addregion rocks 641.000000 46.000000 693.000000 104.000000
+border_left -705.000000
+border_right 1000.000000
+border_top -700.000000
+border_bottom 580.000000
+spawn_players
+# END GENERATED CODE
+
+grav 0
+
+cl show_radar 0
+
+ifndef did_tanker2_briefing cl briefing \
+"MESSAGE FROM UTO COMMAND --
+
+We need to deploy a tanker in this star system to collect resources.\
+Scout the area and clear out any resistance\
+so that we can set up drilling operations.
+
+Our intelligence reports some Mastrix Defense forces in the area.
+Resistance should be minimal, but don\'t be careless.
+
+Once the area is secure we will send in the tanker.\
+Your job is to protect it from any attackers.
+
+This mission will make or break the Mastrix operation.\
+Time to do or die.
+
+-- END MESSAGE
+
+
+OBJECTIVES:
+
+- Visit each planet
+- Destroy all resistance
+- When the way is clear, the oil tanker will enter the star system
+- Protect the oil tanker while it collects resources"
+
+
+let did_tanker2_briefing = 1
+sticky did_tanker2_briefing
+
+trigger "fade_map tanker_crudeoil" crudeoil
+trigger "fade_map tanker_gas" gas
+trigger "fade_map tanker_rocks" rocks
+trigger "fade_map tanker_ore" ore
+trigger "fade_map tanker2" player_died
+
+fun setup_trigger {
+	trigger "map tanker"
+		killed_crudeoil_turret1
+		killed_crudeoil_turret2
+		killed_crudeoil_bot1
+		killed_crudeoil_bot2
+		killed_gas_turret1
+		killed_gas_turret2	
+		killed_rocks_turret1
+		killed_rocks_bot1
+		killed_rocks_bot2
+		killed_rocks_bot3
+		killed_rocks_bot4
+		killed_rocks_bot5
+		killed_ore_boss
+		killed_ore_bot1
+		killed_ore_bot2
+		killed_ore_bot3;
+}
+
+setup_trigger
+
+laser_num 2
+laser_level 1
+
+ifndef started_clearout_music cl soundtrack "sounds/spacerock.mp3"
+
+set started_clearout_music 1
+sticky started_clearout_music

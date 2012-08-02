@@ -1,0 +1,52 @@
+# BEGIN GENERATED CODE
+addent -3673.333252 -16.666626 "images/planet-earth.png" 1.000000 0.000000 ""
+addent -816.666748 -353.333282 "images/star1.png" 1.000000 0.000000 ""
+addent 2792.811523 -126.666626 "images/planet-jupiter.png" 1.800000 0.000000 ""
+addspawn -3306.666748 -23.333313 0.000000
+addregion navigator1_end 3481.000000 -101.000000 3581.000000 -1.000000
+addregion outer_navigator1_end 3381.000000 -201.000000 3681.000000 98.000000
+border_left -4000.000000
+border_right 4000.000000
+border_top -800.000000
+border_bottom 800.000000
+spawn_players
+# END GENERATED CODE
+
+asteroid  1566.666626 -768.000000 1
+asteroid -2360.000000 -273.333313 1
+asteroid -1866.666626  -13.333313 1
+asteroid -2103.333252   80.000031 1
+asteroid -1946.666626 -259.999939 1
+asteroid -1520.000000  140.000031 1
+asteroid -1713.333374  603.333374 1
+asteroid -1023.333374  663.333374 1
+asteroid   156.666626  113.333344 1
+asteroid   -40.000061  653.333374 1
+asteroid   563.333313 -446.666626 1
+asteroid  1278.333252  260.000031 1
+asteroid  1484.999878 -333.333282 1
+
+grav 0
+
+wormhole 3532 -52 departure_end
+trigger "fade_map harvest" departure_end
+
+cl briefing "MESSAGE FROM UTO COMMAND --
+
+Alright, it\'s time to get famous. Earth is\
+in crisis and it\'s up to you to save it. We\'ve discovered a\
+wormhole behind Jupiter that should lead to a distant galaxy.\
+I\'m sending you, alone, to check it out. Take the warp, find a\
+suitable galaxy, and kill anything green or bug-eyed. Signal\
+me when you\'re done.
+
+Training is over. Time for action. Over and out.
+
+-- END MESSAGE
+
+OBJECTIVES:
+
+-Find the wormhole and head through it.
+-On arrival, await further orders."
+
+trigger "fade_map departure" player_died

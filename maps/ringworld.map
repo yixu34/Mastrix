@@ -1,0 +1,73 @@
+exec "deathmatch.cfg"
+
+# BEGIN GENERATED CODE
+addspawn -639.999878 -1206.666748 -1.078933
+addspawn 713.333374 -1033.333496 -1.937849
+addspawn -1166.666504 -460.000092 -0.169101
+addspawn 2546.666504 246.666565 2.818775
+addspawn 2106.666504 -1493.333496 -2.669471
+addspawn -739.999878 549.601440 0.798486
+addspawn 786.666748 794.934753 1.859719
+addspawn -753.333191 -2580.000000 -1.587461
+addspawn -2059.999756 -1586.666748 0.000000
+addspawn -1999.999756 1586.666748 0.000000
+addspawn -773.333191 2180.000000 1.347995
+addspawn 1591.666748 1663.248047 2.710963
+addspawn 2750.000000 -406.751923 -2.915466
+addspawn 1946.666626 -1993.333252 -2.336666
+addspawn 926.666748 -2193.333252 -2.034444
+addspawn 2380.000000 -1000.000122 -2.286541
+addspawn 2236.666748 849.999817 2.927532
+border_left -2800.000000
+border_right 3000.000000
+border_top -2800.000000
+border_bottom 2800.000000
+spawn_players
+# END GENERATED CODE
+
+addent 0.000000 0.000000 images/star1.png 2.000000 0.000000
+orbit_center 0 0 0.02
+
+orbiter 1333.297607 1297.484375 images/planet-water.png 1.000000 1.658270
+recurse_orbit_center 1333.297607 1297.484375 0.2
+recurse_orbiter 1796.666748 1141.829956 images/ast-large.png 0.500000 -0.205683
+
+orbiter -258.205780 1644.628906 images/planet-mars.png 1.000000 0.146702
+recurse_orbit_center -258.205780 1644.628906 0.3
+recurse_orbiter -551.666504 1313.333374 images/moon-rhea.png 0.300000 1.703348
+
+orbiter -1646.538818 619.628845 images/planet-neptune.png 1.000000 -2.641142
+recurse_orbit_center -1646.538818 619.628845 0.3
+recurse_orbiter -2053.333496 266.666809 images/moon-enceladus.png 0.250000 1.508928
+recurse_orbiter -1381.666382 276.830292 images/moon-enceladus.png 0.150000 2.305391
+
+orbiter -1529.038940 -1134.537720 images/moon-io.png 1.000000 2.723896
+recurse_orbit_center -1529.038940 -1134.537720 0.2
+recurse_orbiter -1928.333008 -869.836365 images/moon-rhea.png 0.280000 -0.155167
+
+orbiter -209.872406 -2138.704346 images/planet-earth.png 1.000000 0.000000
+recurse_orbit_center -209.872406 -2138.704346 0.7
+recurse_orbiter 216.666931 -2388.169678 images/moon-rhea.png 0.220000 -1.036052
+
+orbiter 2223.333252 -376.204346 images/planet-jupiter.png 1.000000 3.132385
+recurse_orbit_center 2223.333252 -376.204346 0.3
+recurse_orbiter 2526.666748 -11.503296 images/moon-rhea.png 0.300000 -2.633932
+
+orbiter 1555.000122 -1474.537598 images/moon-enceladus.png 1.000000 -0.533833
+recurse_orbit_center 1555.000122 -1474.537598 -0.5
+recurse_orbiter 1821.630737 -1717.515625 images/ast-large.png 0.500000 1.616918
+
+autopowerup 433.333435 -1020.000061   powerup1  20 random
+autopowerup 1006.666748 -262.666779   powerup2  20 random
+autopowerup -1204.174072 -85.331848   powerup3  20 random
+autopowerup -115.640747 970.934814    powerup4  20 random
+autopowerup -666.666504 -846.666748   powerup5  20 random
+autopowerup 760.000122 662.666565     powerup6  20 random
+autopowerup -906.666504 598.666565    powerup7  20 random
+autopowerup -1746.666504 -2093.333252 powerup8  20 random
+autopowerup 2506.666504 -1766.666748  powerup9  20 random
+autopowerup 2400.000000 1780.000000   powerup10 20 random
+autopowerup -1846.666504 1973.333252  powerup11 20 random
+
+cl soundtrack "sounds/ambient1.mp3"
+
